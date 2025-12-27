@@ -1,0 +1,201 @@
+/* =============================================== */
+/* WHATSAPP VE MOBİL MENÜ İÇİN FİNAL STİL DOSYASI
+/* Bu dosya, ana style.css'i ezmeden çalışır.
+/* =============================================== */
+
+/* 1. WHATSAPP İKONU (HER EKRANDA GÖRÜNÜR) */
+.whatsapp-float {
+    position: fixed;
+    width: 60px;
+    height: 60px;
+    bottom: 40px;
+    right: 40px;
+    background-color: #25d366;
+    color: #FFF;
+    border-radius: 50px;
+    text-align: center;
+    font-size: 30px;
+    box-shadow: 2px 2px 10px rgba(0,0,0,0.2);
+    z-index: 100;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.whatsapp-float:hover {
+    transform: scale(1.1);
+    background-color: #128C7E;
+}
+
+/* 2. MOBİL MENÜ İKONLARI (BAŞLANGIÇTA GİZLİ) */
+/* Bu kural, ikonların masaüstünde ASLA görünmemesini garanti eder */
+.nav-open-btn,
+.nav-close-btn {
+    display: none;
+    background: none;
+    border: none;
+    font-size: 1.8rem;
+    color: var(--dark-color, #1a1a1a);
+    cursor: pointer;
+}
+
+/* =============================================== */
+/* EKRAN 1050px'DEN KÜÇÜK OLDUĞUNDA GEÇERLİ OLACAK KURALLAR
+/* =============================================== */
+@media (max-width: 1050px) {
+    
+    /* Masaüstü menüsünü gizle */
+    .main-nav {
+        position: fixed;
+        top: 0;
+        right: -100%; /* Başlangıçta ekranın dışında */
+        width: 100%;
+        max-width: 320px;
+        height: 100vh;
+        background-color: #fff;
+        box-shadow: -5px 0 20px rgba(0,0,0,0.1);
+        padding: 80px 40px 40px;
+        transition: right 0.4s cubic-bezier(0.7, 0, 0.3, 1);
+        z-index: 1002;
+    }
+
+    /* JavaScript ile .active class'ı eklenince menüyü göster */
+    .main-nav.active {
+        right: 0;
+    }
+    
+    /* Mobil menü içindeki liste elemanları */
+    .main-nav ul {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 0;
+    }
+    .main-nav > ul > li {
+        margin-left: 0;
+        width: 100%;
+        border-bottom: 1px solid var(--gray-bg, #f8f9fa);
+    }
+    .main-nav ul li a {
+        display: block;
+        width: 100%;
+        padding: 15px 0;
+        font-size: 1.1rem;
+    }
+
+    /* Mobil açılır menüler */
+    .main-nav .dropdown > a {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .main-nav .dropdown-menu {
+        display: none;
+        position: static;
+        visibility: visible;
+        opacity: 1;
+        transform: none;
+        box-shadow: none;
+        border-radius: 0;
+        margin: 10px 0 0 0;
+        padding: 10px 0 10px 15px;
+        min-width: 100%;
+        transition: none;
+        border-top: 1px solid var(--gray-bg, #f8f9fa);
+    }
+    /* JS ile .open class'ı eklenince alt menüyü göster */
+    .main-nav .dropdown.open .dropdown-menu {
+        display: block;
+    }
+    .main-nav .dropdown.open > a i {
+        transform: rotate(180deg);
+    }
+    .main-nav .dropdown-menu li {
+        border-bottom: none;
+    }
+    
+    /* "Teklif Al" butonunu mobilde gizle, hamburgeri göster */
+    .header-right .btn-nav-final {
+        display: none;
+    }
+    .nav-open-btn {
+        display: block; /* Hamburger butonu SADECE bu blok içinde görünür */
+    }
+    
+    /* Menü içindeki kapatma ikonu */
+    .nav-close-btn {
+        display: block;
+        position: absolute;
+        top: 20px;
+        right: 20px;
+        font-size: 2rem;
+    }
+
+    /* WhatsApp ikonunu mobilde biraz küçült ve yeniden konumlandır */
+    .whatsapp-float {
+        width: 50px;
+        height: 50px;
+        font-size: 24px;
+        bottom: 20px;
+        right: 20px;
+    }
+}
+/* =============================================== */
+/* MASAÜSTÜ MENÜ GARANTİSİ (1051px ve üstü)
+/* =============================================== */
+@media (min-width: 1051px) {
+    
+    /* Masaüstünde mobil menü ikonları HER ZAMAN gizli olmalı */
+    .nav-open-btn,
+    .nav-close-btn {
+        display: none !important;
+    }
+
+    /* Masaüstünde ana menü HER ZAMAN görünür olmalı */
+    .main-nav {
+        display: block !important;
+        position: static !important;
+        width: auto !important;
+        height: auto !important;
+        background-color: transparent !important;
+        box-shadow: none !important;
+        padding: 0 !important;
+        right: auto !important;
+    }
+    .main-nav ul {
+        flex-direction: row !important;
+    }
+    .main-nav > ul > li {
+        border-bottom: none !important;
+        width: auto !important;
+        margin-left: 25px !important;
+    }
+}
+/* Hakkımızda başlığının kelime bölünmesini engelle */
+h1, h2, h3 {
+  white-space: nowrap;
+  overflow-wrap: normal;
+  word-break: keep-all;
+}
+
+/* Mobilde fontu biraz küçültelim */
+@media (max-width: 768px) {
+  h1 {
+    font-size: 2rem; /* gerekirse 1.8rem yapabilirsin */
+  }
+}
+/* Sadece 'Hakkımızda' bölümündeki başlığa uygula */
+.about h1,
+.about h2 {
+  white-space: nowrap;
+  overflow-wrap: normal;
+  word-break: keep-all;
+}
+
+/* Diğer başlıklar için normal kelime sarma */
+h1, h2, h3 {
+  white-space: normal;
+  overflow-wrap: break-word;
+  word-break: normal;
+}
