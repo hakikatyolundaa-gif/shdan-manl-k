@@ -3,297 +3,192 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SH Danışmanlık - Profesyonel STK, Dernek ve Vakıf Çözümleri</title>
-    <meta name="description" content="SH Danışmanlık ile dernek ve vakıf kurma, tüzük hazırlama, genel kurul ve tüm bürokratik işlemlerde uzman desteği alın.">
     
-    <!-- PERFORMANS AYARI: İlk banner görselini önceden yükle (LCP Hızlandırma) -->
+    <!-- SEO CANAVARI BAŞLIK VE AÇIKLAMA -->
+    <title>İstanbul STK Danışmanlığı | Dernek ve Vakıf Kurulumu - SH Danışmanlık</title>
+    <meta name="description" content="İstanbul'da profesyonel STK danışmanlığı. Dernek ve vakıf kurulumu, genel kurul yönetimi ve mali danışmanlıkta 10 yıllık tecrübe. Bürokrasiyi birlikte aşalım.">
+    <meta name="keywords" content="istanbul dernek danışmanlığı, stk danışmanlık istanbul, vakıf kurulumu, dernek tüzük hazırlama, genel kurul yönetimi, mali danışmanlık">
+    <meta name="author" content="SH Danışmanlık">
+    <link rel="canonical" href="https://shdanismanlik.netlify.app/">
+
+    <!-- GOOGLE İÇİN TEKNİK ŞEMA (JSON-LD) - Aramalarda öne çıkarır -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "LocalBusiness",
+      "name": "SH Danışmanlık",
+      "image": "https://shdanismanlik.netlify.app/logo.webp",
+      "@id": "",
+      "url": "https://shdanismanlik.netlify.app/",
+      "telephone": "+905347054234",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Örnek Mah. No:1",
+        "addressLocality": "İstanbul",
+        "postalCode": "34000",
+        "addressCountry": "TR"
+      },
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": 41.0082,
+        "longitude": 28.9784
+      },
+      "openingHoursSpecification": {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": [
+          "Monday", "Tuesday", "Wednesday", "Thursday", "Friday"
+        ],
+        "opens": "09:00",
+        "closes": "18:00"
+      }
+    }
+    </script>
+
+    <!-- PERFORMANS: Görsel Ön Yükleme -->
     <link rel="preload" as="image" href="img/banner1.webp" fetchpriority="high">
 
+    <!-- PERFORMANS: Font ve İkon Yükleme (Render Blocking Fix) -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet" media="print" onload="this.media='all'">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" media="print" onload="this.media='all'">
+    
     <link rel="stylesheet" href="css/style.css">
-
     <link rel="icon" href="logo.webp" type="image/webp">
+
+    <style>
+        /* WHATSAPP WIDGET SAF KOD (Performans için) */
+        .wa-floating { position: fixed; bottom: 25px; left: 25px; z-index: 9999; display: flex; align-items: center; text-decoration: none; transition: all 0.3s ease; }
+        .wa-btn { background-color: #25d366; color: white !important; width: 60px; height: 60px; border-radius: 50px; display: flex; align-items: center; justify-content: center; font-size: 32px; box-shadow: 2px 4px 15px rgba(0,0,0,0.3); }
+        .wa-msg { background: white; color: #333; padding: 10px 18px; border-radius: 25px; margin-left: 12px; font-size: 14px; font-weight: 600; box-shadow: 2px 4px 10px rgba(0,0,0,0.1); white-space: nowrap; }
+        @media (max-width: 768px) { .wa-msg { display: none; } } /* Mobilde sadece ikon görünsün yer kaplamasın */
+        .wa-floating:hover { transform: scale(1.05); }
+    </style>
 </head>
 <body>  
 
-    <header class="main-header">
-      <div class="container header-container">
-        
-        <!-- Logo -->
-        <a href="index.html" class="logo-container">
-          <img src="logo.webp" alt="SH Danışmanlık Logosu" class="logo-img" width="180" height="auto" />
-        </a>
-
-        <!-- Navigasyon Menüsü -->
-        <nav class="main-nav">
-          <button class="nav-close-btn" aria-label="Menüyü kapat">
-            <i class="fas fa-times"></i>
-          </button>
-
-          <ul>
-            <li><a href="index.html" class="active">Ana Sayfa</a></li>
-            <li class="dropdown">
-              <a href="#">Kurumsal <i class="fas fa-chevron-down" aria-hidden="true"></i></a>
-              <ul class="dropdown-menu">
-                <li><a href="hakkimizda.html">Hakkımızda</a></li>
-                <li><a href="sss.html">Sıkça Sorulan Sorular</a></li>
-              </ul>
-            </li>
-            <li class="dropdown">
-              <a href="#">Hizmetlerimiz <i class="fas fa-chevron-down" aria-hidden="true"></i></a>
-              <ul class="dropdown-menu">
-                <li><a href="hizmet-dernek-kurulusu.html">Dernek Kuruluşu</a></li>
-                <li><a href="hizmet-vakif-kurulusu.html">Vakıf Kuruluşu</a></li>
-                <li><a href="hizmet-genel-kurul.html">Genel Kurul Yönetimi</a></li>
-                <li><a href="hizmet-mali-danismanlik.html">Mali Danışmanlık</a></li>
-                <li><a href="hizmet-proje-yazma.html">Proje ve Fon Geliştirme</a></li>
-                <li><a href="hizmet-yasal-danismanlik.html">Yasal Danışmanlık</a></li>
-              </ul>
-            </li>
-            <li class="dropdown">
-              <a href="#">Bilgi Bankası <i class="fas fa-chevron-down" aria-hidden="true"></i></a>
-              <ul class="dropdown-menu">
-                <li><a href="blog.html">Blog & Makaleler</a></li>
-                <li><a href="mevzuat.html">Mevzuatlar</a></li>
-              </ul>
-            </li>
-            <li><a href="referanslar.html">Referanslar</a></li>
-            <li><a href="iletisim.html">İletişim</a></li>
+<header class="main-header">
+  <div class="container header-container">
+    <a href="index.html" class="logo-container">
+      <img src="logo.webp" alt="SH Danışmanlık Logo" class="logo-img" width="180" height="55" />
+    </a>
+    <nav class="main-nav">
+      <button class="nav-close-btn" aria-label="Menüyü kapat"><i class="fas fa-times"></i></button>
+      <ul>
+        <li><a href="index.html" class="active">Ana Sayfa</a></li>
+        <li class="dropdown">
+          <a href="#">Kurumsal <i class="fas fa-chevron-down"></i></a>
+          <ul class="dropdown-menu">
+            <li><a href="hakkimizda.html">Hakkımızda</a></li>
+            <li><a href="sss.html">Sıkça Sorulan Sorular</a></li>
           </ul>
-        </nav>
+        </li>
+        <li class="dropdown">
+          <a href="hizmetlerimiz.html">Hizmetlerimiz <i class="fas fa-chevron-down"></i></a>
+          <ul class="dropdown-menu">
+            <li><a href="hizmet-dernek-kurulusu.html">Dernek Kuruluşu</a></li>
+            <li><a href="hizmet-vakif-kurulusu.html">Vakıf Kuruluşu</a></li>
+            <li><a href="hizmet-genel-kurul.html">Genel Kurul Yönetimi</a></li>
+            <li><a href="hizmet-mali-danismanlik.html">Mali Danışmanlık</a></li>
+            <li><a href="hizmet-proje-yazma.html">Proje ve Fon Geliştirme</a></li>
+            <li><a href="hizmet-yasal-danismanlik.html">Yasal Danışmanlık</a></li>
+          </ul>
+        </li>
+        <li><a href="referanslar.html">Referanslar</a></li>
+        <li><a href="iletisim.html">İletişim</a></li>
+      </ul>
+    </nav>
+    <button class="nav-open-btn" aria-label="Menüyü aç"><i class="fas fa-bars"></i></button>
+  </div>
+</header>
 
-          <button class="nav-open-btn" aria-label="Menüyü aç">
-            <i class="fas fa-bars"></i>
-          </button>
-      </div>
-    </header>
-
-    <main>
-        <section class="slider">
-            <div class="slides">
-                <!-- İlk slayt en önemli olan, hız önceliği onda -->
-                <div class="slide" style="background-image: url('img/banner1.webp');">
-                    <div class="slide-content"><h1>Bürokrasiyi Sizin İçin Aşıyoruz</h1><p>STK, dernek ve vakıf yönetimi karmaşık olmak zorunda değil. Uzman ekibimizle yanınızdayız.</p><a href="#services" class="btn btn-primary">Hizmetlerimizi Keşfedin</a></div>
-                </div>
-                <div class="slide" style="background-image: url('img/banner2.webp');">
-                    <div class="slide-content"><h1>Fikirden Hayata: Kurumunuzu Oluşturun</h1><p>Dernek veya vakıf kurma, tüzük hazırlama ve tescil süreçlerinde A'dan Z'ye profesyonel destek.</p><a href="#contact" class="btn btn-primary">Ücretsiz Danışın</a></div>
-                </div>
-                <div class="slide" style="background-image: url('img/banner3.webp');">
-                    <div class="slide-content"><h1>Mevzuata Tam Uyum, Risksiz Yönetim</h1><p>Genel kurul, beyanname ve denetim süreçlerinde hatasız ve yasalara uygun hareket edin.</p><a href="#contact" class="btn btn-primary">Teklif Alın</a></div>
-                </div>
-            </div>
-            <button class="slider-btn prev" aria-label="Önceki Slayt"><i class="fas fa-chevron-left" aria-hidden="true"></i></button>
-            <button class="slider-btn next" aria-label="Sonraki Slayt"><i class="fas fa-chevron-right" aria-hidden="true"></i></button>
-            <div class="slider-dots"></div>
-        </section>
-        
-        <section class="stats-section">
-            <div class="container">
-                <div class="stats-grid">
-                    <div class="stat-item">
-                        <i class="fas fa-calendar-alt"></i>
-                        <h3 class="counter" data-target="10">0</h3>
-                        <p>Yılı Aşkın Tecrübe</p>
-                    </div>
-                    <div class="stat-item">
-                        <i class="fas fa-check-circle"></i>
-                        <h3 class="counter" data-target="150">0</h3>
-                        <p>Başarılı Proje</p>
-                    </div>
-                    <div class="stat-item">
-                        <i class="fas fa-handshake"></i>
-                        <h3 class="counter" data-target="75">0</h3>
-                        <p>Aktif STK Partneri</p>
-                    </div>
-                    <div class="stat-item">
-                        <i class="fas fa-users"></i>
-                        <h3 class="counter" data-target="1000">0</h3>
-                        <p>Eğitim Alan Katılımcı</p>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section id="about" class="about-section">
-            <div class="container">
-                <div class="about-grid">
-                    <div class="about-image" style="background-image: url('img/hakkimizda-bg.webp');"></div>
-                    <div class="about-content">
-                        <h2 class="section-title-left">Biz Kimiz?</h2>
-                        <h3>Sivil Toplum Vizyonunuzun Mimarı</h3>
-                        <p>SH Danışmanlık, sivil toplum kuruluşlarının karmaşık yasal ve idari süreçlerde kaybolmasını önlemek amacıyla kurulmuştur. Yıllara dayanan tecrübemizle, fikirlerinizi sürdürülebilir ve etkili projelere dönüştürmek için buradayız.</p>
-                        <a href="hakkimizda.html" class="btn btn-secondary">Daha Fazlasını Oku</a>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section id="services" class="services-section">
-            <div class="container">
-                <h2 class="section-title">Kapsamlı Çözümlerimiz</h2>
-                <div class="services-grid">
-                    <div class="service-card"><i class="fas fa-sitemap" aria-hidden="true"></i><h3>Dernek Kuruluşu</h3><p>Tüzük hazırlığı, yasal başvuru ve tescil sürecinin eksiksiz yönetimi.</p></div>
-                    <div class="service-card"><i class="fas fa-landmark" aria-hidden="true"></i><h3>Vakıf Kuruluşu</h3><p>Resmi senet hazırlama, mahkeme süreci ve tescil işlemlerinde uzman destek.</p></div>
-                    <div class="service-card"><i class="fas fa-gavel" aria-hidden="true"></i><h3>Genel Kurul Yönetimi</h3><p>Olağan ve olağanüstü genel kurulların mevzuata uygun organizasyonu.</p></div>
-                    <div class="service-card"><i class="fas fa-balance-scale" aria-hidden="true"></i><h3>Yasal Sorumluluklar</h3><p>Yöneticilerin hukuki ve mali sorumlulukları hakkında danışmanlık ve eğitim.</p></div>
-                    <div class="service-card"><i class="fas fa-file-invoice-dollar" aria-hidden="true"></i><h3>Mali Danışmanlık</h3><p>STK'lara özel muhasebe, beyanname hazırlama ve finansal raporlama.</p></div>
-                    <div class="service-card"><i class="fas fa-lightbulb" aria-hidden="true"></i><h3>Proje ve Fon Geliştirme</h3><p>Ulusal ve uluslararası hibe programlarına yönelik proje yazma ve yönetme.</p></div>
-                </div>
-            </div>
-        </section>
-
-        <section id="latest-posts" class="latest-posts-section">
-            <div class="container">
-                <div class="section-header">
-                    <h2>Blog & Güncel Duyurular</h2>
-                </div>
-                <div class="posts-grid">
-                    <div class="post-card">
-                        <a href="blog-yazi-detay.html" class="post-card-image">
-                            <!-- loading="lazy" eklendi -->
-                            <img src="https://images.unsplash.com/photo-1516321497487-e288fb19713f?w=800" alt="Mevzuat Çalışması" loading="lazy" width="400" height="250">
-                        </a>
-                        <div class="post-card-content">
-                            <span class="post-card-category">MEVZUAT</span>
-                            <h3 class="post-card-title"><a href="blog-yazi-detay.html">Dernekler Beyannamesi: 2025 Yılında Nelere Dikkat Edilmeli?</a></h3>
-                            <a href="blog-yazi-detay.html" class="post-card-readmore">Devamını Oku →</a>
-                        </div>
-                    </div>
-                    <div class="post-card">
-                        <a href="blog-yazi-detay.html" class="post-card-image">
-                            <!-- loading="lazy" eklendi -->
-                            <img src="https://images.unsplash.com/photo-1552664730-d307ca884978?w=800" alt="Hibe Fırsatları" loading="lazy" width="400" height="250">
-                        </a>
-                        <div class="post-card-content">
-                            <span class="post-card-category">HİBE FIRSATI</span>
-                            <h3 class="post-card-title"><a href="blog-yazi-detay.html">Gençlik Projeleri Destek Programı Başvuruları Başladı!</a></h3>
-                            <a href="blog-yazi-detay.html" class="post-card-readmore">Devamını Oku →</a>
-                        </div>
-                    </div>
-                    <div class="post-card">
-                        <a href="blog-yazi-detay.html" class="post-card-image">
-                            <!-- loading="lazy" eklendi -->
-                            <img src="https://images.unsplash.com/photo-1543286386-713bdd548da4?w=800" alt="İktisadi İşletme" loading="lazy" width="400" height="250">
-                        </a>
-                        <div class="post-card-content">
-                            <span class="post-card-category">BİLGİ NOTU</span>
-                            <h3 class="post-card-title"><a href="blog-yazi-detay.html">İktisadi İşletme Kurmanın STK'lara Sağladığı Avantajlar</a></h3>
-                            <a href="blog-yazi-detay.html" class="post-card-readmore">Devamını Oku →</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section id="testimonials" class="testimonials-section">
-            <div class="container">
-                <div class="section-header"><h2>Mutlu Müşterilerimiz</h2></div>
-                <div class="testimonials-grid-main">
-                    <div class="testimonial-card-main">
-                        <div class="testimonial-content">
-                            <i class="fas fa-quote-left"></i>
-                            <p>"SH Danışmanlık sayesinde federasyonumuzun kuruluş sürecini rekor bir sürede tamamladık."</p>
-                        </div>
-                        <div class="testimonial-author-main">
-                            <!-- loading="lazy" eklendi -->
-                            <img src="https://i.pravatar.cc/100?img=1" alt="Ahmet Yılmaz" loading="lazy">
-                            <div class="author-info"><h4>Ahmet Yılmaz</h4><span>Federasyon Bşk.</span></div>
-                        </div>
-                    </div>
-                    <div class="testimonial-card-main">
-                        <div class="testimonial-content">
-                            <i class="fas fa-quote-left"></i>
-                            <p>"Hibe başvuru sürecinde bize yol gösterdiler. Profesyonellikleri için minnettarız."</p>
-                        </div>
-                        <div class="testimonial-author-main">
-                            <!-- loading="lazy" eklendi -->
-                            <img src="https://i.pravatar.cc/100?img=5" alt="Zeynep Kaya" loading="lazy">
-                            <div class="author-info"><h4>Zeynep Kaya</h4><span>Vakıf Koor.</span></div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section id="faq" class="faq-section">
-            <div class="container">
-                <h2 class="section-title">Sıkça Sorulan Sorular</h2>
-                <div class="faq-accordion">
-                    <div class="faq-item">
-                        <button class="faq-question">Dernek kurmak için kaç kişi gereklidir?</button>
-                        <div class="faq-answer"><p>En az 7 gerçek veya tüzel kişinin bir araya gelmesi gerekmektedir.</p></div>
-                    </div>
-                    <div class="faq-item">
-                        <button class="faq-question">Danışmanlık ücretleriniz nedir?</button>
-                        <div class="faq-answer"><p>İhtiyaçlarınızı analiz ettikten sonra size özel şeffaf bir teklif sunuyoruz.</p></div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section id="contact" class="contact-section">
-            <div class="container">
-                <h2 class="section-title">Hayalinizdeki Projeyi Hayata Geçirelim</h2>
-                <form class="contact-form">
-                    <input type="text" placeholder="Adınız Soyadınız" required>
-                    <input type="email" placeholder="E-posta Adresiniz" required>
-                    <textarea placeholder="Mesajınız..." rows="5" required></textarea>
-                    <button type="submit" class="btn btn-primary">Ücretsiz Teklif Al</button>
-                </form>
-            </div>
-        </section>
-    </main>
-
-    <footer class="main-footer">
-        <div class="container">
-            <div class="footer-grid">
-                <div class="footer-col">
-                    <img src="logo.webp" alt="SH Danışmanlık Footer Logo" class="footer-logo" loading="lazy">
-                    <p>"Bize Uğrayın, Bürokrasiye Takılmayın"</p>
-                    <p>© 2025 SH Danışmanlık.</p>
-                </div>
-                <div class="footer-col">
-                    <h4>Hızlı Menü</h4>
-                    <ul>
-                        <li><a href="hakkimizda.html">Hakkımızda</a></li>
-                        <li><a href="hizmetlerimiz.html">Hizmetlerimiz</a></li>
-                        <li><a href="iletisim.html">İletişim</a></li>
-                    </ul>
-                </div>
-                <div class="footer-col">
-                    <h4>İletişim</h4>
-                    <p><i class="fas fa-phone"></i> 0534 705 42 34</p>
-                    <p><i class="fas fa-envelope"></i> info@shdanismanlik.com</p>
-                </div>
-                <div class="footer-col">
-                    <h4>Takip Edin</h4>
-                    <div class="social-icons">
-                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
-                        <a href="#"><i class="fab fa-instagram"></i></a>
-                    </div>
+<main>
+    <section class="slider">
+        <div class="slides">
+            <div class="slide" style="background-image: url('img/banner1.webp');">
+                <div class="slide-content">
+                    <h1>İstanbul'un En Güvenilir STK Danışmanı</h1>
+                    <p>Dernek ve Vakıf yönetimi profesyonellik ister. Uzman ekibimizle tüm bürokrasiyi sizin için çözüyoruz.</p>
+                    <a href="#services" class="btn btn-primary">Hizmetleri İncele</a>
                 </div>
             </div>
         </div>
-    </footer>
+    </section>
+    
+    <section class="stats-section">
+        <div class="container">
+            <div class="stats-grid">
+                <div class="stat-item"><i class="fas fa-calendar-alt"></i><h3 class="counter" data-target="10">0</h3><p>Yıllık Tecrübe</p></div>
+                <div class="stat-item"><i class="fas fa-check-circle"></i><h3 class="counter" data-target="150">0</h3><p>Başarılı Proje</p></div>
+                <div class="stat-item"><i class="fas fa-handshake"></i><h3 class="counter" data-target="75">0</h3><p>Aktif Partner</p></div>
+                <div class="stat-item"><i class="fas fa-users"></i><h3 class="counter" data-target="1000">0</h3><p>Mutlu Yönetici</p></div>
+            </div>
+        </div>
+    </section>
 
-    <script src="js/script.js"></script>
+    <section id="about" class="about-section">
+        <div class="container">
+            <div class="about-grid">
+                <div class="about-image" style="background-image: url('img/hakkimizda-bg.webp');"></div>
+                <div class="about-content">
+                    <h2 class="section-title-left">Halamoğlu SH Danışmanlık</h2>
+                    <h3>Sivil Toplumun Geleceğini İnşa Ediyoruz</h3>
+                    <p>SH Danışmanlık, İstanbul merkezli olup Türkiye genelindeki dernek ve vakıfların yasal, mali ve idari süreçlerini profesyonelce yöneten lider bir kuruluştur.</p>
+                    <a href="hakkimizda.html" class="btn btn-secondary">Detaylı Bilgi</a>
+                </div>
+            </div>
+        </div>
+    </section>
 
-    <!-- WhatsApp Widget - Sayfa sonunda yüklenmesi için buraya taşındı -->
-    <script type="text/javascript">
-        (function () {
-            var options = {
-                whatsapp: "+905347054234",
-                call_to_action: "SH DANIŞMANLIK Nasıl Yardımcı Olabiliriz.",
-                position: "left",
-            };
-            var proto = document.location.protocol, host = "getbutton.io", url = proto + "//static." + host;
-            var s = document.createElement('script'); s.type = 'text/javascript'; s.async = true; s.src = url + '/widget-send-button/js/init.js';
-            s.onload = function () { WhWidgetSendButton.init(host, proto, options); };
-            var x = document.getElementsByTagName('script')[0]; x.parentNode.insertBefore(s, x);
-        })();
-    </script>
+    <section id="services" class="services-section">
+        <div class="container">
+            <h2 class="section-title">Neden Bizi Seçmelisiniz?</h2>
+            <div class="services-grid">
+                <div class="service-card"><i class="fas fa-sitemap"></i><h3>Dernek Kuruluşu</h3><p>Hızlı tüzük hazırlama ve 7 günde resmi tescil desteği.</p></div>
+                <div class="service-card"><i class="fas fa-landmark"></i><h3>Vakıf Kuruluşu</h3><p>Resmi senet ve mahkeme süreçlerinde hukuki danışmanlık.</p></div>
+                <div class="service-card"><i class="fas fa-gavel"></i><h3>Genel Kurul</h3><p>Mevzuata uygun, hatasız genel kurul organizasyonları.</p></div>
+                <div class="service-card"><i class="fas fa-file-invoice-dollar"></i><h3>Mali Danışmanlık</h3><p>DERBİS beyannameleri ve profesyonel muhasebe takibi.</p></div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="contact-section">
+        <div class="container">
+            <h2 class="section-title">Ücretsiz Ön Görüşme Yapalım</h2>
+            <form class="contact-form">
+                <input type="text" placeholder="Adınız Soyadınız" required aria-label="Ad Soyad">
+                <input type="email" placeholder="E-posta Adresiniz" required aria-label="E-posta">
+                <textarea placeholder="Sorunuzu buraya yazın..." rows="5" required aria-label="Mesaj"></textarea>
+                <button type="submit" class="btn btn-primary">Hemen Teklif Al</button>
+            </form>
+        </div>
+    </section>
+</main>
+
+<footer class="main-footer">
+    <div class="container">
+        <div class="footer-grid">
+            <div class="footer-col">
+                <img src="logo.webp" alt="SH Danışmanlık" class="footer-logo" width="140" height="45" loading="lazy">
+                <p>"Bize Uğrayın, Bürokrasiye Takılmayın"</p>
+                <p>© 2025 İstanbul - Tüm Hakları Saklıdır.</p>
+            </div>
+            <div class="footer-col">
+                <h4>İletişim</h4>
+                <p><i class="fas fa-phone"></i> +90 534 705 42 34</p>
+                <p><i class="fas fa-envelope"></i> info@shdanismanlik.com</p>
+                <p><i class="fas fa-map-marker-alt"></i> İstanbul, Türkiye</p>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<!-- WHATSAPP CANAVAR WIDGET -->
+<a href="https://wa.me/905347054234" class="wa-floating" target="_blank" rel="noopener">
+    <div class="wa-btn"><i class="fab fa-whatsapp"></i></div>
+    <div class="wa-msg">Halamoğlu'na Soru Sorun!</div>
+</a>
+
+<script src="js/script.js"></script>
 </body>
 </html>
