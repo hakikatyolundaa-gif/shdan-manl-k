@@ -3,198 +3,200 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hakkımızda - SH Danışmanlık</title>
-    <meta name="description" content="SH Danışmanlık'ın vizyonu, misyonu ve sivil toplum alanındaki tecrübesi hakkında daha fazla bilgi edinin.">
     
-    <!-- LCP PERFORMANS: Arka plan banner görselini önceden yükle (Hız için kritik) -->
+    <!-- SEO VE KURUMSAL OTORİTE AYARLARI -->
+    <title>Hakkımızda | Kurumsal STK ve Mevzuat Danışmanlığı - SH Danışmanlık</title>
+    <meta name="description" content="10 yılı aşkın tecrübe, uzman kadro ve etik değerlerimizle sivil toplum kuruluşlarının yanındayız. SH Danışmanlık vizyonu, misyonu ve kurumsal yapısı hakkında bilgi edinin.">
+    <meta name="keywords" content="stk danışmanlık kurumsal, sh danışmanlık kimdir, dernek kurulum tecrübesi, vakıf danışmanlığı istanbul, profesyonel stk yönetimi">
+    <link rel="canonical" href="https://shdanismanlik.netlify.app/hakkimizda.html">
+
+    <!-- GOOGLE KURUMSAL ŞEMA (JSON-LD) - Şirket profilini aramada güçlendirir -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "AboutPage",
+      "mainEntity": {
+        "@type": "Organization",
+        "name": "SH Danışmanlık",
+        "description": "Sivil toplum kuruluşları için profesyonel yasal, mali ve idari danışmanlık hizmetleri.",
+        "areaServed": "TR",
+        "address": {
+          "@type": "PostalAddress",
+          "addressLocality": "İstanbul",
+          "addressCountry": "TR"
+        }
+      }
+    }
+    </script>
+
+    <!-- PERFORMANS: LCP (Banner Görseli Ön Yükleme) -->
     <link rel="preload" as="image" href="img/hakkimizda-bg.webp" fetchpriority="high">
 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <!-- PERFORMANS: Font ve İkonların Engelleyici Olmadan Yüklenmesi -->
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet" media="print" onload="this.media='all'">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" media="print" onload="this.media='all'">
+    
     <link rel="stylesheet" href="css/style.css">
-
     <link rel="icon" href="logo.webp" type="image/webp">
+
+    <style>
+        /* KURUMSAL WHATSAPP WIDGET (Sıfır JavaScript - Maksimum Hız) */
+        .wa-floating-btn { position: fixed; bottom: 25px; left: 25px; z-index: 9999; display: flex; align-items: center; text-decoration: none; transition: all 0.3s ease; }
+        .wa-icon { background-color: #25d366; color: white !important; width: 60px; height: 60px; border-radius: 50px; display: flex; align-items: center; justify-content: center; font-size: 32px; box-shadow: 0 4px 12px rgba(0,0,0,0.2); }
+        .wa-label { background: white; color: #333; padding: 10px 18px; border-radius: 25px; margin-left: 12px; font-size: 14px; font-weight: 600; box-shadow: 0 2px 8px rgba(0,0,0,0.1); white-space: nowrap; }
+        @media (max-width: 768px) { .wa-label { display: none; } }
+        .wa-floating-btn:hover { transform: translateY(-3px); }
+    </style>
 </head>
 <body>
 
-    <header class="main-header">
-      <div class="container header-container">
-        <!-- Logo Boyutları Sabitlendi (CLS ve Best Practices Fix) -->
-        <a href="index.html" class="logo-container">
-          <img src="logo.webp" alt="SH Danışmanlık Logosu" class="logo-img" width="180" height="50" />
-        </a>
-
-        <nav class="main-nav">
-          <button class="nav-close-btn" aria-label="Menüyü kapat">
-            <i class="fas fa-times"></i>
-          </button>
-
-          <ul>
-            <li><a href="index.html">Ana Sayfa</a></li>
-            <li class="dropdown">
-              <a href="#" class="active">Kurumsal <i class="fas fa-chevron-down" aria-hidden="true"></i></a>
-              <ul class="dropdown-menu">
-                <li><a href="hakkimizda.html">Hakkımızda</a></li>
-                <li><a href="sss.html">Sıkça Sorulan Sorular</a></li>
-              </ul>
-            </li>
-            <li class="dropdown">
-              <a href="hizmetlerimiz.html">Hizmetlerimiz <i class="fas fa-chevron-down" aria-hidden="true"></i></a>
-              <ul class="dropdown-menu">
-                <li><a href="hizmet-dernek-kurulusu.html">Dernek Kuruluşu</a></li>
-                <li><a href="hizmet-vakif-kurulusu.html">Vakıf Kuruluşu</a></li>
-                <li><a href="hizmet-genel-kurul.html">Genel Kurul Yönetimi</a></li>
-                <li><a href="hizmet-mali-danismanlik.html">Mali Danışmanlık</a></li>
-                <li><a href="hizmet-proje-yazma.html">Proje ve Fon Geliştirme</a></li>
-                <li><a href="hizmet-yasal-danismanlik.html">Yasal Danışmanlık</a></li>
-              </ul>
-            </li>
-            <li class="dropdown">
-              <a href="#">Bilgi Bankası <i class="fas fa-chevron-down" aria-hidden="true"></i></a>
-              <ul class="dropdown-menu">
-                <li><a href="blog.html">Blog & Makaleler</a></li>
-                <li><a href="mevzuat.html">Mevzuatlar</a></li>
-              </ul>
-            </li>
-            <li><a href="referanslar.html">Referanslar</a></li>
-            <li><a href="iletisim.html">İletişim</a></li>
+<header class="main-header">
+  <div class="container header-container">
+    <a href="index.html" class="logo-container">
+      <img src="logo.webp" alt="SH Danışmanlık" class="logo-img" width="180" height="55" />
+    </a>
+    <nav class="main-nav">
+      <button class="nav-close-btn" aria-label="Menüyü kapat"><i class="fas fa-times"></i></button>
+      <ul>
+        <li><a href="index.html">Ana Sayfa</a></li>
+        <li class="dropdown">
+          <a href="#" class="active">Kurumsal <i class="fas fa-chevron-down"></i></a>
+          <ul class="dropdown-menu">
+            <li><a href="hakkimizda.html">Hakkımızda</a></li>
+            <li><a href="sss.html">Sıkça Sorulan Sorular</a></li>
           </ul>
-        </nav>
+        </li>
+        <li class="dropdown">
+          <a href="hizmetlerimiz.html">Hizmetlerimiz <i class="fas fa-chevron-down"></i></a>
+          <ul class="dropdown-menu">
+            <li><a href="hizmet-dernek-kurulusu.html">Dernek Kuruluşu</a></li>
+            <li><a href="hizmet-vakif-kurulusu.html">Vakıf Kuruluşu</a></li>
+            <li><a href="hizmet-genel-kurul.html">Genel Kurul Yönetimi</a></li>
+            <li><a href="hizmet-mali-danismanlik.html">Mali Danışmanlık</a></li>
+            <li><a href="hizmet-proje-yazma.html">Proje ve Fon Geliştirme</a></li>
+            <li><a href="hizmet-yasal-danismanlik.html">Yasal Danışmanlık</a></li>
+          </ul>
+        </li>
+        <li class="dropdown">
+          <a href="#">Bilgi Bankası <i class="fas fa-chevron-down"></i></a>
+          <ul class="dropdown-menu">
+            <li><a href="blog.html">Blog & Makaleler</a></li>
+            <li><a href="mevzuat.html">Mevzuatlar</a></li>
+          </ul>
+        </li>
+        <li><a href="referanslar.html">Referanslar</a></li>
+        <li><a href="iletisim.html">İletişim</a></li>
+      </ul>
+    </nav>
+    <button class="nav-open-btn" aria-label="Menüyü aç"><i class="fas fa-bars"></i></button>
+  </div>
+</header>
 
-        <button class="nav-open-btn" aria-label="Menüyü aç">
-          <i class="fas fa-bars"></i>
-        </button>
-      </div>
-    </header>
+<main>
+    <!-- PAGE HEADER -->
+    <section class="page-header" style="background-image: url('img/hakkimizda-bg.webp');">
+        <div class="container">
+            <h1>Hakkımızda</h1>
+            <p>Sivil toplum vizyonunuzun güvenilir ve profesyonel çözüm ortağı.</p>
+        </div>
+    </section>
 
-    <main>
-        <!-- İÇ SAYFA BAŞLIK BANNER'I -->
-        <section class="page-header" style="background-image: url('img/hakkimizda-bg.webp');">
-            <div class="container">
-                <h1>Hakkımızda</h1>
-                <p>Sivil toplum vizyonunuzun güvenilir çözüm ortağı.</p>
-            </div>
-        </section>
-
-        <!-- İÇERİK ALANI -->
-        <section class="page-content">
-            <div class="container">
-                <div class="content-grid">
-                    <!-- ANA İÇERİK BÖLÜMÜ -->
-                    <div class="main-content">
-                        <h2>Fikirden Gerçeğe, Bürokrasiden Harekete</h2>
-                        <p>SH Danışmanlık, sivil toplumun gücüne inanan ve bu gücü harekete geçirmek isteyenler için profesyonel bir yol arkadaşı olmak üzere kurulmuştur...</p>
-                        
-                        <div class="feature-box">
-                            <div class="icon-wrapper"><i class="fas fa-bullseye"></i></div>
-                            <div>
-                                <h3>Vizyonumuz</h3>
-                                <p>Sivil toplum alanında faaliyet göstermek isteyen her birey ve kurum için bürokrasiyi bir engel olmaktan çıkarıp, fikirlerini kolayca hayata geçirebilecekleri bir ekosistem yaratılmasına öncülük etmek.</p>
-                            </div>
+    <!-- KURUMSAL İÇERİK ALANI -->
+    <section class="page-content">
+        <div class="container">
+            <div class="content-grid">
+                
+                <div class="main-content">
+                    <h2>Fikirden Gerçeğe, Bürokrasiden Harekete</h2>
+                    <p>SH Danışmanlık, sivil toplumun gücüne inanan ve bu gücü profesyonel bir zeminde harekete geçirmek isteyenler için uzman bir yol arkadaşı olmak üzere kurulmuştur. Topluma fayda sağlama amacıyla yola çıkan dernek, vakıf ve sivil toplum kuruluşlarının, karmaşık yasal prosedürler ve bürokratik engellerle enerjilerini tüketmelerini önlemeyi amaçlıyoruz.</p>
+                    
+                    <div class="feature-box">
+                        <div class="icon-wrapper"><i class="fas fa-bullseye"></i></div>
+                        <div>
+                            <h3>Vizyonumuz</h3>
+                            <p>Sivil toplum alanında faaliyet göstermek isteyen her birey ve kurum için bürokrasiyi bir engel olmaktan çıkarıp, fikirlerini sürdürülebilir projelere dönüştürebilecekleri küresel standartlarda bir danışmanlık ekosistemi yaratmak.</p>
                         </div>
-
-                        <div class="feature-box">
-                            <div class="icon-wrapper"><i class="fas fa-flag-checkered"></i></div>
-                            <div>
-                                <h3>Misyonumuz</h3>
-                                <p>Müvekkillerimize, STK kurma, yönetme ve geliştirme süreçlerinin her aşamasında, güncel mevzuata hakim, yenilikçi ve sonuç odaklı danışmanlık hizmetleri sunmak.</p>
-                            </div>
-                        </div>
-
-                        <h3>Değerlerimiz</h3>
-                        <ul>
-                            <li><strong>Güvenilirlik:</strong> Tüm süreçlerde şeffaf ve dürüst bir iletişim kurarız.</li>
-                            <li><strong>Uzmanlık:</strong> Alanımızdaki en güncel bilgi ve tecrübeyle hareket ederiz.</li>
-                            <li><strong>Çözüm Odaklılık:</strong> Karşılaşılan her soruna pratik ve yasal çözümler üretiriz.</li>
-                        </ul>
                     </div>
 
-                    <!-- YAN MENÜ (SIDEBAR) -->
-                    <aside class="sidebar">
-                        <div class="widget">
-                            <h4>Kurumsal</h4>
-                            <ul>
-                                <li><a href="hakkimizda.html" class="current">Hakkımızda</a></li>
-                                <li><a href="sss.html">Sıkça Sorulan Sorular</a></li>
-                            </ul>
+                    <div class="feature-box">
+                        <div class="icon-wrapper"><i class="fas fa-flag-checkered"></i></div>
+                        <div>
+                            <h3>Misyonumuz</h3>
+                            <p>Müvekkillerimize, STK kurma, yönetme ve geliştirme süreçlerinin her aşamasında; güncel mevzuata hakim, şeffaf ve sonuç odaklı danışmanlık hizmetleri sunarak, toplumsal fayda hedeflerine en verimli şekilde ulaşmalarını sağlamak.</p>
                         </div>
-                        <div class="widget">
-                            <h4>Hızlı İletişim</h4>
-                            <p>Projeniz hakkında görüşmek için hemen bize ulaşın.</p>
-                            <a href="iletisim.html" class="btn btn-secondary" style="width: 100%;">İletişime Geç</a>
-                        </div>
-                    </aside>
-                </div>
-            </div>
-        </section>
-    </main>
+                    </div>
 
-    <!-- WhatsApp Floating Button (Sabit) -->
-    <a href="https://wa.me/905347054234" class="whatsapp-float" target="_blank" rel="noopener" aria-label="WhatsApp İletişim">
-        <i class="fab fa-whatsapp"></i>
-    </a>
-
-    <footer class="main-footer">
-        <div class="container">
-            <div class="footer-grid">
-                <!-- Logo Boyutları ve Lazy Load -->
-                <div class="footer-col">
-                    <img src="logo.webp" alt="SH Danışmanlık Footer Logo" class="footer-logo" width="150" height="40" loading="lazy">
-                    <p>"Bize Uğrayın, Bürokrasiye Takılmayın"</p>
-                    <p>© 2025 SH Danışmanlık. Tüm Hakları Saklıdır.</p>
-                </div>
-
-                <!-- Hızlı Menü -->
-                <div class="footer-col">
-                    <h4>Hızlı Menü</h4>
-                    <ul>
-                        <li><a href="hakkimizda.html">Hakkımızda</a></li>
-                        <li><a href="hizmetlerimiz.html">Hizmetlerimiz</a></li>
-                        <li><a href="blog.html">Blog</a></li>
-                        <li><a href="iletisim.html">İletişim</a></li>
+                    <h3>Kurumsal Değerlerimiz</h3>
+                    <ul class="values-list">
+                        <li><strong>Güvenilirlik:</strong> Tüm iş süreçlerimizde şeffaf, dürüst ve hesap verebilir bir iletişim kurarız.</li>
+                        <li><strong>Uzmanlık:</strong> Alanımızdaki ulusal ve uluslararası mevzuat güncellemelerini anlık takip ederek en doğru bilgiyi sunarız.</li>
+                        <li><strong>Çözüm Odaklılık:</strong> Karşılaşılan bürokratik sorunlara yasal çerçeve içerisinde pratik ve yenilikçi çözümler üretiriz.</li>
+                        <li><strong>Gizlilik:</strong> Danışmanlık verdiğimiz tüm kurumların verilerini yüksek güvenlik standartlarında koruruz.</li>
                     </ul>
                 </div>
 
-                <!-- İletişim Bilgileri -->
-                <div class="footer-col">
-                    <h4>İletişim</h4>
-                    <p><i class="fas fa-map-marker-alt" aria-hidden="true"></i> İstanbul</p>
-                    <p><i class="fas fa-phone" aria-hidden="true"></i> +90 534 705 42 34</p>
-                    <p><i class="fas fa-envelope" aria-hidden="true"></i> info@shdanismanlik.com</p>
-                </div>
-
-                <!-- Sosyal Medya -->
-                <div class="footer-col">
-                    <h4>Bizi Takip Edin</h4>
-                    <div class="social-icons">
-                        <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
-                        <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                <!-- SIDEBAR -->
+                <aside class="sidebar">
+                    <div class="widget">
+                        <h4>Kurumsal Menü</h4>
+                        <ul>
+                            <li><a href="hakkimizda.html" class="current">Hakkımızda</a></li>
+                            <li><a href="sss.html">Sıkça Sorulan Sorular</a></li>
+                        </ul>
                     </div>
-                </div>
-            </div>
-            <div class="footer-bottom" style="margin-top: 20px; text-align: center; font-size: 13px; color: #aaa;">
-                <p>© 2025 Tasarım ve Yazılım. <a href="https://akodijital.com" target="_blank" style="color: #00aced; text-decoration: none;">AKODİJİTAL</a></p>
+                    <div class="widget">
+                        <h4>İletişim</h4>
+                        <p>Kurumsal süreçlerinizle ilgili uzman ekibimizle görüşmek için hemen ulaşın.</p>
+                        <a href="iletisim.html" class="btn btn-secondary" style="width: 100%;">Randevu Alın</a>
+                    </div>
+                </aside>
             </div>
         </div>
-    </footer>
+    </section>
+</main>
 
-    <script src="js/script.js"></script>
+<footer class="main-footer">
+    <div class="container">
+        <div class="footer-grid">
+            <div class="footer-col">
+                <img src="logo.webp" alt="SH Danışmanlık" class="footer-logo" width="150" height="45" loading="lazy">
+                <p>"Bize Uğrayın, Bürokrasiye Takılmayın"</p>
+                <p>© 2025 SH Danışmanlık. Tüm Hakları Saklıdır.</p>
+            </div>
+            <div class="footer-col">
+                <h4>Hızlı Menü</h4>
+                <ul>
+                    <li><a href="hakkimizda.html">Hakkımızda</a></li>
+                    <li><a href="hizmetlerimiz.html">Hizmetlerimiz</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                    <li><a href="iletisim.html">İletişim</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>İletişim Bilgileri</h4>
+                <p><i class="fas fa-map-marker-alt"></i> Örnek Mah. No:1, İstanbul</p>
+                <p><i class="fas fa-phone"></i> +90 534 705 42 34</p>
+                <p><i class="fas fa-envelope"></i> info@shdanismanlik.com</p>
+            </div>
+            <div class="footer-col">
+                <h4>Kurumsal Sosyal Medya</h4>
+                <div class="social-icons">
+                    <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                    <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
 
-    <!-- GetButton.io widget - Sayfa sonuna taşındı -->
-    <script type="text/javascript">
-        (function () {
-            var options = {
-                whatsapp: "+905347054234",
-                call_to_action: "Bize Yazın",
-                position: "left",
-            };
-            var proto = document.location.protocol, host = "getbutton.io", url = proto + "//static." + host;
-            var s = document.createElement('script'); s.type = 'text/javascript'; s.async = true; s.src = url + '/widget-send-button/js/init.js';
-            s.onload = function () { WhWidgetSendButton.init(host, proto, options); };
-            var x = document.getElementsByTagName('script')[0]; x.parentNode.insertBefore(s, x);
-        })();
-    </script>
+<!-- KURUMSAL WHATSAPP WIDGET (Hız ve Ciddiyet Odaklı) -->
+<a href="https://wa.me/905347054234" class="wa-floating-btn" target="_blank" rel="noopener" aria-label="WhatsApp üzerinden iletişime geçin">
+    <div class="wa-icon"><i class="fab fa-whatsapp"></i></div>
+    <div class="wa-label">Size Nasıl Yardımcı Olabiliriz?</div>
+</a>
+
+<script src="js/script.js"></script>
 </body>
 </html>
