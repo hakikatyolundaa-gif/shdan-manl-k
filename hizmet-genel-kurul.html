@@ -3,8 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <title>Genel Kurul Yönetimi ve Danışmanlığı - SH Danışmanlık</title>
-<meta name="description" content="Olağan ve olağanüstü genel kurul süreçlerinizi yasalara uygun, sorunsuz ve verimli bir şekilde yönetiyoruz. Toplantı öncesi, sırası ve sonrası tüm işlemler.">   
+    <title>Genel Kurul Yönetimi ve Danışmanlığı - SH Danışmanlık</title>
+    <meta name="description" content="Olağan ve olağanüstü genel kurul süreçlerinizi yasalara uygun, sorunsuz ve verimli bir şekilde yönetiyoruz. Toplantı öncesi, sırası ve sonrası tüm işlemler.">   
+    
+    <!-- LCP PERFORMANS: Sayfa başındaki ana banner görselini önceden yükle -->
+    <link rel="preload" as="image" href="img/banner3.webp" fetchpriority="high">
+
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
@@ -14,201 +18,192 @@
 </head>
 <body>
 
-<!-- GetButton.io widget -->
-<script type="text/javascript">
-    (function () {
-        var options = {
-            whatsapp: "+905347054234", // WhatsApp number
-            call_to_action: "SH DANIŞMANLIK Nasıl Yardımcı Olabiliriz.", // Call to action
-            position: "left", // Position may be 'right' or 'left'
-        };
-        var proto = document.location.protocol, host = "getbutton.io", url = proto + "//static." + host;
-        var s = document.createElement('script'); s.type = 'text/javascript'; s.async = true; s.src = url + '/widget-send-button/js/init.js';
-        s.onload = function () { WhWidgetSendButton.init(host, proto, options); };
-        var x = document.getElementsByTagName('script')[0]; x.parentNode.insertBefore(s, x);
-    })();
-</script>
-<!-- /GetButton.io widget -->
-
-    <!-- Header (Ana sayfadaki ile aynı) -->
+    <!-- Header -->
     <header class="main-header">
-  <div class="container header-container">
-    
-    <!-- Logo -->
-    <a href="index.html" class="logo-container">
-      <img src="logo.webp" alt="SH Danışmanlık Logosu" class="logo-img" />
-    </a>
+      <div class="container header-container">
+        <!-- Logo Boyutları Sabitlendi (CLS ve Best Practices Fix) -->
+        <a href="index.html" class="logo-container">
+          <img src="logo.webp" alt="SH Danışmanlık Logosu" class="logo-img" width="180" height="50" />
+        </a>
 
-    <!-- Navigasyon Menüsü -->
-    <nav class="main-nav">
-      <!-- MOBİL MENÜ KAPATMA BUTONU (Çarpı) -->
-      <button class="nav-close-btn" aria-label="Menüyü kapat">
-        <i class="fas fa-times"></i>
-      </button>
+        <nav class="main-nav">
+          <button class="nav-close-btn" aria-label="Menüyü kapat">
+            <i class="fas fa-times"></i>
+          </button>
 
-      <ul>
-        <li><a href="index.html">Ana Sayfa</a></li>
-        <li class="dropdown">
-          <a href="#">Kurumsal <i class="fas fa-chevron-down" aria-hidden="true"></i></a>
-          <ul class="dropdown-menu">
-            <li><a href="hakkimizda.html">Hakkımızda</a></li>
-            <li><a href="sss.html">Sıkça Sorulan Sorular</a></li>
+          <ul>
+            <li><a href="index.html">Ana Sayfa</a></li>
+            <li class="dropdown">
+              <a href="#">Kurumsal <i class="fas fa-chevron-down" aria-hidden="true"></i></a>
+              <ul class="dropdown-menu">
+                <li><a href="hakkimizda.html">Hakkımızda</a></li>
+                <li><a href="sss.html">Sıkça Sorulan Sorular</a></li>
+              </ul>
+            </li>
+            <li class="dropdown">
+              <a href="hizmetlerimiz.html" class="active">Hizmetlerimiz <i class="fas fa-chevron-down" aria-hidden="true"></i></a>
+              <ul class="dropdown-menu">
+                <li><a href="hizmet-dernek-kurulusu.html">Dernek Kuruluşu</a></li>
+                <li><a href="hizmet-vakif-kurulusu.html">Vakıf Kuruluşu</a></li>
+                <li><a href="hizmet-genel-kurul.html">Genel Kurul Yönetimi</a></li>
+                <li><a href="hizmet-mali-danismanlik.html">Mali Danışmanlık</a></li>
+                <li><a href="hizmet-proje-yazma.html">Proje ve Fon Geliştirme</a></li>
+                <li><a href="hizmet-yasal-danismanlik.html">Yasal Danışmanlık</a></li>
+              </ul>
+            </li>
+            <li class="dropdown">
+              <a href="#">Bilgi Bankası <i class="fas fa-chevron-down" aria-hidden="true"></i></a>
+              <ul class="dropdown-menu">
+                <li><a href="blog.html">Blog & Makaleler</a></li>
+                <li><a href="mevzuat.html">Mevzuatlar</a></li>
+              </ul>
+            </li>
+            <li><a href="referanslar.html">Referanslar</a></li>
+            <li><a href="iletisim.html">İletişim</a></li>
           </ul>
-        </li>
-        <li class="dropdown">
-          <a href="hizmetlerimiz.html"class="active">Hizmetlerimiz <i class="fas fa-chevron-down" aria-hidden="true"></i></a>
-          <ul class="dropdown-menu">
-            <li><a href="hizmet-dernek-kurulusu.html">Dernek Kuruluşu</a></li>
-            <li><a href="hizmet-vakif-kurulusu.html">Vakıf Kuruluşu</a></li>
-            <li><a href="hizmet-genel-kurul.html">Genel Kurul Yönetimi</a></li>
-            <li><a href="hizmet-mali-danismanlik.html">Mali Danışmanlık</a></li>
-            <li><a href="hizmet-proje-yazma.html">Proje ve Fon Geliştirme</a></li>
-            <li><a href="hizmet-yasal-danismanlik.html">Yasal Danışmanlık</a></li>
-          </ul>
-        </li>
-        <li class="dropdown">
-          <a href="#">Bilgi Bankası <i class="fas fa-chevron-down" aria-hidden="true"></i></a>
-          <ul class="dropdown-menu">
-            <li><a href="blog.html">Blog & Makaleler</a></li>
-            <li><a href="mevzuat.html">Mevzuatlar</a></li>
-          </ul>
-        </li>
-        <li><a href="referanslar.html">Referanslar</a></li>
-        <li><a href="iletisim.html">İletişim</a></li>
-      </ul>
-    </nav>
-    
+        </nav>
 
-      <!-- MOBİL MENÜ AÇMA BUTONU (Hamburger) -->
-      <button class="nav-open-btn" aria-label="Menüyü aç">
-        <i class="fas fa-bars"></i>
-      </button>
-    </div>
-  </div>
-</header>
+        <button class="nav-open-btn" aria-label="Menüyü aç">
+          <i class="fas fa-bars"></i>
+        </button>
+      </div>
+    </header>
 
     <main>
-<!-- İÇ SAYFA BAŞLIK BANNER'I -->
-<section class="page-header" style="background-image: url('img/banner3.webp');"> <!-- Farklı bir banner resmi -->
-    <div class="container">
-        <h1>Genel Kurul Yönetimi</h1>
-        <p>Kurumunuzun en önemli karar mekanizmasını sorunsuz işletin.</p>
-    </div>
-</section>
+        <!-- İÇ SAYFA BAŞLIK BANNER'I -->
+        <section class="page-header" style="background-image: url('img/banner3.webp');">
+            <div class="container">
+                <h1>Genel Kurul Yönetimi</h1>
+                <p>Kurumunuzun en önemli karar mekanizmasını sorunsuz işletin.</p>
+            </div>
+        </section>
+
         <!-- İÇERİK ALANI -->
         <section class="page-content">
             <div class="container">
                 <div class="content-grid">
-<!-- ANA İÇERİK BÖLÜMÜ -->
-<div class="main-content">
-    <h2>Stratejik Kararlar İçin Kusursuz Genel Kurullar</h2>
-    <p>Genel kurul, bir dernek veya vakfın en yetkili karar organıdır ve faaliyetlerin yasalara uygun şekilde devamlılığı için hayati önem taşır. Ancak genel kurul süreçleri; çağrı usullerinden gündem oluşturmaya, hazirun cetvelinden divan tutanaklarına kadar birçok teknik detayı ve yasal zorunluluğu içerir. Yapılacak küçük bir usul hatası, alınan tüm kararların geçersiz sayılmasına neden olabilir.</p>
-    <p>SH Danışmanlık olarak, olağan ve olağanüstü genel kurullarınızın her aşamasını titizlikle planlayarak ve yürüterek sizi bu karmaşık süreçten kurtarıyoruz. Amacımız, toplantılarınızın verimli geçmesini ve alınan kararların hukuki geçerliliğini güvence altına almaktır.</p>
-    
-    <h3 style="margin-top: 40px;">Kapsamlı Genel Kurul Hizmetimiz</h3>
-    
-    <div class="feature-box">
-        <div class="icon-wrapper"><i class="fas fa-calendar-alt"></i></div>
-        <div>
-            <h4>Toplantı Öncesi Hazırlık</h4>
-            <p>Yönetim kurulu kararının alınması, üye listelerinin güncellenmesi, gündemin belirlenmesi, faaliyet ve denetim raporlarının hazırlanması, üyelere yasal süresi içinde çağrının yapılması.</p>
-        </div>
-    </div>
-    <div class="feature-box">
-        <div class="icon-wrapper"><i class="fas fa-users"></i></div>
-        <div>
-            <h4>Toplantı Günü Yönetimi</h4>
-            <p>Hazirun cetvelinin imzalatılması, toplantı yeter sayısının kontrolü, divan başkanlığına sunulacak belgelerin hazırlanması ve toplantı sürecinde divana hukuki destek sağlanması.</p>
-        </div>
-    </div>
-    <div class="feature-box">
-        <div class="icon-wrapper"><i class="fas fa-file-signature"></i></div>
-        <div>
-            <h4>Tutanak ve Kararların Hazırlanması</h4>
-            <p>Genel kurul divan tutanağının ve alınan tüm kararların (yönetim ve denetim kurulu seçimi, tüzük değişikliği, bütçe onayı vb.) yasal formata uygun şekilde yazılarak imza altına alınması.</p>
-        </div>
-    </div>
-    <div class="feature-box">
-        <div class="icon-wrapper"><i class="fas fa-paper-plane"></i></div>
-        <div>
-            <h4>Toplantı Sonrası Yasal Bildirimler</h4>
-            <p>Genel kurul sonuç bildiriminin, seçilen yeni organların ve diğer gerekli belgelerin yasal süre olan 30 gün içinde ilgili Mülki İdare Amirliği'ne (DERBİS üzerinden) bildirilmesi.</p>
-        </div>
-    </div>
-</div>
-<!-- YAN MENÜ (SIDEBAR) -->
-<aside class="sidebar">
-    <div class="widget">
-        <h4>Tüm Hizmetlerimiz</h4>
-        <ul>
-            <li><a href="hizmet-dernek-kurulusu.html">Dernek Kuruluşu</a></li>
-            <li><a href="hizmet-vakif-kurulusu.html">Vakıf Kuruluşu</a></li>
-            <li><a href="hizmet-genel-kurul.html" class="current">Genel Kurul Yönetimi</a></li>
-            <li><a href="hizmet-mali-danismanlik.html">Mali Danışmanlık</a></li>
-            <li><a href="hizmet-proje-yazma.html">Proje ve Fon Geliştirme</a></li>
-            <li><a href="hizmet-yasal-danismanlik.html">Yasal Danışmanlık</a></li>
-        </ul>
-    </div>
-    <div class="widget">
-        <h4>Hızlı Teklif Alın</h4>
-        <p>Genel kurul sürecinizi sorunsuz yönetmek için teklif isteyin.</p>
-        <a href="iletisim.html" class="btn btn-secondary" style="width: 100%;">Teklif İsteyin</a>
-    </div>
-</aside>
+                    <!-- ANA İÇERİK BÖLÜMÜ -->
+                    <div class="main-content">
+                        <h2>Stratejik Kararlar İçin Kusursuz Genel Kurullar</h2>
+                        <p>Genel kurul, bir dernek veya vakfın en yetkili karar organıdır. Ancak süreçler teknik detay ve yasal zorunluluk içerir. SH Danışmanlık olarak, toplantılarınızın verimli geçmesini ve alınan kararların hukuki geçerliliğini güvence altına alıyoruz.</p>
+                        
+                        <h3 style="margin-top: 40px;">Kapsamlı Genel Kurul Hizmetimiz</h3>
+                        
+                        <div class="feature-box">
+                            <div class="icon-wrapper"><i class="fas fa-calendar-alt"></i></div>
+                            <div>
+                                <h4>Toplantı Öncesi Hazırlık</h4>
+                                <p>Yönetim kurulu kararı, üye listelerinin güncellenmesi ve yasal çağrı süreçlerinin yönetilmesi.</p>
+                            </div>
+                        </div>
+                        <div class="feature-box">
+                            <div class="icon-wrapper"><i class="fas fa-users"></i></div>
+                            <div>
+                                <h4>Toplantı Günü Yönetimi</h4>
+                                <p>Hazirun cetvelinin imzalatılması, toplantı yeter sayısı kontrolü ve divana hukuki destek sağlanması.</p>
+                            </div>
+                        </div>
+                        <div class="feature-box">
+                            <div class="icon-wrapper"><i class="fas fa-file-signature"></i></div>
+                            <div>
+                                <h4>Tutanak ve Kararların Hazırlanması</h4>
+                                <p>Genel kurul divan tutanağının ve alınan kararların yasal formata uygun şekilde yazılarak imzalanması.</p>
+                            </div>
+                        </div>
+                        <div class="feature-box">
+                            <div class="icon-wrapper"><i class="fas fa-paper-plane"></i></div>
+                            <div>
+                                <h4>Toplantı Sonrası Yasal Bildirimler</h4>
+                                <p>Genel kurul sonuç bildiriminin yasal süresi içinde DERBİS üzerinden mülki idareye bildirilmesi.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- SIDEBAR -->
+                    <aside class="sidebar">
+                        <div class="widget">
+                            <h4>Tüm Hizmetlerimiz</h4>
+                            <ul>
+                                <li><a href="hizmet-dernek-kurulusu.html">Dernek Kuruluşu</a></li>
+                                <li><a href="hizmet-vakif-kurulusu.html">Vakıf Kuruluşu</a></li>
+                                <li><a href="hizmet-genel-kurul.html" class="current">Genel Kurul Yönetimi</a></li>
+                                <li><a href="hizmet-mali-danismanlik.html">Mali Danışmanlık</a></li>
+                                <li><a href="hizmet-proje-yazma.html">Proje ve Fon Geliştirme</a></li>
+                                <li><a href="hizmet-yasal-danismanlik.html">Yasal Danışmanlık</a></li>
+                            </ul>
+                        </div>
+                        <div class="widget">
+                            <h4>Hızlı Teklif Alın</h4>
+                            <p>Genel kurul sürecinizi sorunsuz yönetmek için teklif isteyin.</p>
+                            <a href="iletisim.html" class="btn btn-secondary" style="width: 100%;">Teklif İsteyin</a>
+                        </div>
+                    </aside>
                 </div>
             </div>
         </section>
     </main>
 
+    <!-- WhatsApp Floating Button -->
+    <a href="https://wa.me/905347054234" class="whatsapp-float" target="_blank" rel="noopener" aria-label="WhatsApp İletişim">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
+    <!-- Footer -->
     <footer class="main-footer">
-    <div class="container">
-        <div class="footer-grid">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <img src="logo.webp" alt="SH Danışmanlık Footer Logo" class="footer-logo" width="150" height="40" loading="lazy">
+                    <p>"Bize Uğrayın, Bürokrasiye Takılmayın"</p>
+                    <p>© 2025 SH Danışmanlık. Tüm Hakları Saklıdır.</p>
+                </div>
 
-            <!-- Logo ve Slogan -->
-            <div class="footer-col">
-                <img src="logo.webp" alt="SH Danışmanlık Footer Logo" class="footer-logo">
-                <p>"Bize Uğrayın, Bürokrasiye Takılmayın"</p>
-                <p>© 2025 SH Danışmanlık. Tüm Hakları Saklıdır.</p>
-            </div>
+                <div class="footer-col">
+                    <h4>Hızlı Menü</h4>
+                    <ul>
+                        <li><a href="hakkimizda.html">Hakkımızda</a></li>
+                        <li><a href="hizmetlerimiz.html">Hizmetlerimiz</a></li>
+                        <li><a href="blog.html">Blog</a></li>
+                        <li><a href="iletisim.html">İletişim</a></li>
+                    </ul>
+                </div>
 
-            <!-- Hızlı Menü -->
-            <div class="footer-col">
-                <h4>Hızlı Menü</h4>
-                <ul>
-                    <li><a href="hakkimizda.html">Hakkımızda</a></li>
-                    <li><a href="hizmetlerimiz.html">Hizmetlerimiz</a></li>
-                    <li><a href="blog.html">Blog</a></li>
-                    <li><a href="iletisim.html">İletişim</a></li>
-                </ul>
-            </div>
+                <div class="footer-col">
+                    <h4>İletişim</h4>
+                    <p><i class="fas fa-map-marker-alt"></i> İstanbul</p>
+                    <p><i class="fas fa-phone"></i> +90 534 705 42 34</p>
+                    <p><i class="fas fa-envelope"></i> info@shdanismanlik.com</p>
+                </div>
 
-            <!-- İletişim Bilgileri -->
-            <div class="footer-col">
-                <h4>İletişim</h4>
-                <p><i class="fas fa-map-marker-alt" aria-hidden="true"></i> Örnek Mah. No:1, İstanbul</p>
-                <p><i class="fas fa-phone" aria-hidden="true"></i> +90 555 123 45 67</p>
-                <p><i class="fas fa-envelope" aria-hidden="true"></i> info@shdanismanlik.com</p>
-            </div>
-
-            <!-- Sosyal Medya -->
-            <div class="footer-col">
-                <h4>Bizi Takip Edin</h4>
-                <div class="social-icons">
-                    <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in" aria-hidden="true"></i></a>
-                    <a href="#" aria-label="Twitter"><i class="fab fa-twitter" aria-hidden="true"></i></a>
-                    <a href="#" aria-label="Instagram"><i class="fab fa-instagram" aria-hidden="true"></i></a>
+                <div class="footer-col">
+                    <h4>Bizi Takip Edin</h4>
+                    <div class="social-icons">
+                        <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                    </div>
                 </div>
             </div>
+            <div class="footer-bottom" style="margin-top: 20px; text-align: center; font-size: 13px; color: #aaa;">
+                <p>© 2025 Tasarım ve Yazılım. <a href="https://akodijital.com" target="_blank" style="color: #00aced; text-decoration: none;">AKODİJİTAL</a></p>
+            </div>
         </div>
-
-        <!-- Alt Satır - Telif & Tasarımcı -->
-        <div class="footer-bottom" style="margin-top: 20px; text-align: center; font-size: 13px; color: #aaa;">
-            <p>© 2025 Tasarım ve Yazılım. Design by <a href="https://akodijital.com" target="_blank" style="color: #00aced; text-decoration: none;">AKODİJİTAL</a></p>
-        </div>
-    </div>
-</footer>
-
+    </footer>
 
     <script src="js/script.js"></script>
+
+    <!-- GetButton.io widget - Sayfa sonuna taşındı -->
+    <script type="text/javascript">
+        (function () {
+            var options = {
+                whatsapp: "+905347054234",
+                call_to_action: "Bize Sorun",
+                position: "left",
+            };
+            var proto = document.location.protocol, host = "getbutton.io", url = proto + "//static." + host;
+            var s = document.createElement('script'); s.type = 'text/javascript'; s.async = true; s.src = url + '/widget-send-button/js/init.js';
+            s.onload = function () { WhWidgetSendButton.init(host, proto, options); };
+            var x = document.getElementsByTagName('script')[0]; x.parentNode.insertBefore(s, x);
+        })();
+    </script>
 </body>
 </html>

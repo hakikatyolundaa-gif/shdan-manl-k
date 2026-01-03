@@ -3,9 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Proje Yazma ve Fon Geliştirme Danışmanlığı - SH Danışmanlık</title>
-<meta name="description" content="STK'lar için hibe ve fon bulma, proje döngüsü yönetimi (PCM), başvuru dosyası hazırlama ve proje yürütme konularında profesyonel danışmanlık.">   
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <title>Proje Yazma ve Fon Geliştirme Danışmanlığı - SH Danışmanlık</title>
+    <meta name="description" content="STK'lar için hibe ve fon bulma, proje döngüsü yönetimi (PCM), başvuru dosyası hazırlama ve proje yürütme konularında profesyonel danışmanlık.">   
+    
+    <!-- LCP PERFORMANS: Sayfa başındaki ana banner görselini önceden yükle (Hız canavarı için kritik) -->
+    <link rel="preload" as="image" href="img/banner2.webp" fetchpriority="high">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="stylesheet" href="css/style.css">
@@ -13,200 +17,199 @@
     <link rel="icon" href="logo.webp" type="image/webp">
 </head>
 <body>
-<!-- GetButton.io widget -->
-<script type="text/javascript">
-    (function () {
-        var options = {
-            whatsapp: "+905347054234", // WhatsApp number
-            call_to_action: "SH DANIŞMANLIK Nasıl Yardımcı Olabiliriz.", // Call to action
-            position: "left", // Position may be 'right' or 'left'
-        };
-        var proto = document.location.protocol, host = "getbutton.io", url = proto + "//static." + host;
-        var s = document.createElement('script'); s.type = 'text/javascript'; s.async = true; s.src = url + '/widget-send-button/js/init.js';
-        s.onload = function () { WhWidgetSendButton.init(host, proto, options); };
-        var x = document.getElementsByTagName('script')[0]; x.parentNode.insertBefore(s, x);
-    })();
-</script>
-<!-- /GetButton.io widget -->
 
-    <!-- Header (Ana sayfadaki ile aynı) -->
+    <!-- Header (Orijinal yapıya sadık, performans için optimize edildi) -->
     <header class="main-header">
-  <div class="container header-container">
-    
-    <!-- Logo -->
-    <a href="index.html" class="logo-container">
-      <img src="logo.webp" alt="SH Danışmanlık Logosu" class="logo-img" />
-    </a>
+      <div class="container header-container">
+        <!-- Logo Boyutları Sabitlendi (CLS ve Best Practices Fix) -->
+        <a href="index.html" class="logo-container">
+          <img src="logo.webp" alt="SH Danışmanlık Logosu" class="logo-img" width="180" height="50" />
+        </a>
 
-    <!-- Navigasyon Menüsü -->
-    <nav class="main-nav">
-      <!-- MOBİL MENÜ KAPATMA BUTONU (Çarpı) -->
-      <button class="nav-close-btn" aria-label="Menüyü kapat">
-        <i class="fas fa-times"></i>
-      </button>
+        <!-- Navigasyon Menüsü -->
+        <nav class="main-nav">
+          <!-- MOBİL MENÜ KAPATMA BUTONU -->
+          <button class="nav-close-btn" aria-label="Menüyü kapat">
+            <i class="fas fa-times"></i>
+          </button>
 
-      <ul>
-        <li><a href="index.html">Ana Sayfa</a></li>
-        <li class="dropdown">
-          <a href="#">Kurumsal <i class="fas fa-chevron-down" aria-hidden="true"></i></a>
-          <ul class="dropdown-menu">
-            <li><a href="hakkimizda.html">Hakkımızda</a></li>
-            <li><a href="sss.html">Sıkça Sorulan Sorular</a></li>
+          <ul>
+            <li><a href="index.html">Ana Sayfa</a></li>
+            <li class="dropdown">
+              <a href="#">Kurumsal <i class="fas fa-chevron-down" aria-hidden="true"></i></a>
+              <ul class="dropdown-menu">
+                <li><a href="hakkimizda.html">Hakkımızda</a></li>
+                <li><a href="sss.html">Sıkça Sorulan Sorular</a></li>
+              </ul>
+            </li>
+            <li class="dropdown">
+              <a href="hizmetlerimiz.html" class="active">Hizmetlerimiz <i class="fas fa-chevron-down" aria-hidden="true"></i></a>
+              <ul class="dropdown-menu">
+                <li><a href="hizmet-dernek-kurulusu.html">Dernek Kuruluşu</a></li>
+                <li><a href="hizmet-vakif-kurulusu.html">Vakıf Kuruluşu</a></li>
+                <li><a href="hizmet-genel-kurul.html">Genel Kurul Yönetimi</a></li>
+                <li><a href="hizmet-mali-danismanlik.html">Mali Danışmanlık</a></li>
+                <li><a href="hizmet-proje-yazma.html">Proje ve Fon Geliştirme</a></li>
+                <li><a href="hizmet-yasal-danismanlik.html">Yasal Danışmanlık</a></li>
+              </ul>
+            </li>
+            <li class="dropdown">
+              <a href="#">Bilgi Bankası <i class="fas fa-chevron-down" aria-hidden="true"></i></a>
+              <ul class="dropdown-menu">
+                <li><a href="blog.html">Blog & Makaleler</a></li>
+                <li><a href="mevzuat.html">Mevzuatlar</a></li>
+              </ul>
+            </li>
+            <li><a href="referanslar.html">Referanslar</a></li>
+            <li><a href="iletisim.html">İletişim</a></li>
           </ul>
-        </li>
-        <li class="dropdown">
-          <a href="hizmetlerimiz.html"class="active">Hizmetlerimiz <i class="fas fa-chevron-down" aria-hidden="true"></i></a>
-          <ul class="dropdown-menu">
-            <li><a href="hizmet-dernek-kurulusu.html">Dernek Kuruluşu</a></li>
-            <li><a href="hizmet-vakif-kurulusu.html">Vakıf Kuruluşu</a></li>
-            <li><a href="hizmet-genel-kurul.html">Genel Kurul Yönetimi</a></li>
-            <li><a href="hizmet-mali-danismanlik.html">Mali Danışmanlık</a></li>
-            <li><a href="hizmet-proje-yazma.html">Proje ve Fon Geliştirme</a></li>
-            <li><a href="hizmet-yasal-danismanlik.html">Yasal Danışmanlık</a></li>
-          </ul>
-        </li>
-        <li class="dropdown">
-          <a href="#">Bilgi Bankası <i class="fas fa-chevron-down" aria-hidden="true"></i></a>
-          <ul class="dropdown-menu">
-            <li><a href="blog.html">Blog & Makaleler</a></li>
-            <li><a href="mevzuat.html">Mevzuatlar</a></li>
-          </ul>
-        </li>
-        <li><a href="referanslar.html">Referanslar</a></li>
-        <li><a href="iletisim.html">İletişim</a></li>
-      </ul>
-    </nav>
+        </nav>
 
-      <!-- MOBİL MENÜ AÇMA BUTONU (Hamburger) -->
-      <button class="nav-open-btn" aria-label="Menüyü aç">
-        <i class="fas fa-bars"></i>
-      </button>
-    </div>
-  </div>
-</header>
+        <!-- MOBİL MENÜ AÇMA BUTONU -->
+        <button class="nav-open-btn" aria-label="Menüyü aç">
+          <i class="fas fa-bars"></i>
+        </button>
+      </div>
+    </header>
 
     <main>
-<!-- İÇ SAYFA BAŞLIK BANNER'I -->
-<section class="page-header" style="background-image: url('img/banner2.webp');"> <!-- Farklı bir banner resmi -->
-    <div class="container">
-        <h1>Proje ve Fon Geliştirme</h1>
-        <p>Toplumsal fayda üreten fikirlerinizi, doğru kaynaklarla buluşturuyoruz.</p>
-    </div>
-</section>
+        <!-- İÇ SAYFA BAŞLIK BANNER'I -->
+        <section class="page-header" style="background-image: url('img/banner2.webp');">
+            <div class="container">
+                <h1>Proje ve Fon Geliştirme</h1>
+                <p>Toplumsal fayda üreten fikirlerinizi, doğru kaynaklarla buluşturuyoruz.</p>
+            </div>
+        </section>
+
         <!-- İÇERİK ALANI -->
         <section class="page-content">
             <div class="container">
                 <div class="content-grid">
-<!-- ANA İÇERİK BÖLÜMÜ -->
-<div class="main-content">
-    <h2>Fikirlerinizi Sürdürülebilir Projelere Dönüştürün</h2>
-    <p>Sivil toplum kuruluşlarının en büyük hedeflerinden biri, misyonları doğrultusunda etkili ve sürdürülebilir projeler hayata geçirmektir. Ancak parlak bir fikir, doğru finansal kaynak ve profesyonel bir proje planı olmadan kağıt üzerinde kalmaya mahkumdur. Ulusal ve uluslararası hibe programları, bu noktada STK'lar için büyük bir fırsat sunar.</p>
-    <p>SH Danışmanlık olarak, proje fikrinizin geliştirilmesinden, uygun hibe programının bulunmasına, başvuru dosyasının hazırlanmasından projenin yürütülmesine kadar tüm aşamalarda size uzman desteği sağlıyoruz. Proje Döngüsü Yönetimi (PCM) metodolojisine hakim ekibimizle, başvurularınızın kabul edilme şansını en üst seviyeye çıkarıyoruz.</p>
-    
-    <h3 style="margin-top: 40px;">Proje Geliştirme Hizmetlerimiz</h3>
-    
-    <div class="feature-box">
-        <div class="icon-wrapper"><i class="fas fa-search-dollar"></i></div>
-        <div>
-            <h4>Fon Araştırması ve Hibe Takibi</h4>
-            <p>Kurumunuzun faaliyet alanına ve hedeflerine en uygun ulusal (TÜBİTAK, KOSGEB, Kalkınma Ajansları) ve uluslararası (Avrupa Birliği, Erasmus+, elçilikler vb.) fon kaynaklarını araştırır ve güncel hibeleri sizin için takip ederiz.</p>
-        </div>
-    </div>
-    <div class="feature-box">
-        <div class="icon-wrapper"><i class="fas fa-tasks"></i></div>
-        <div>
-            <h4>Proje Döngüsü Yönetimi (PCM)</h4>
-            <p>Proje fikrinizin analiz edilmesi, mantıksal çerçevenin oluşturulması, faaliyet planı ve bütçenin hazırlanması gibi tüm PCM adımlarında size rehberlik ederiz.</p>
-        </div>
-    </div>
-    <div class="feature-box">
-        <div class="icon-wrapper"><i class="fas fa-file-powerpoint"></i></div>
-        <div>
-            <h4>Başvuru Dosyası Hazırlığı</h4>
-            <p>İlgili fon programının başvuru formlarını ve rehberlerini detaylıca analiz ederek, projenizi en güçlü ve ikna edici şekilde sunan, eksiksiz bir başvuru dosyası hazırlarız.</p>
-        </div>
-    </div>
-    <div class="feature-box">
-        <div class="icon-wrapper"><i class="fas fa-cogs"></i></div>
-        <div>
-            <h4>Proje Yürütme ve Raporlama</h4>
-            <p>Kabul edilen projelerinizin faaliyetlerinin planlandığı gibi yürütülmesi, harcamaların bütçeye uygun yapılması ve fon sağlayıcıya sunulacak ara ve final raporlarının hazırlanması konularında destek oluruz.</p>
-        </div>
-    </div>
-</div>
-<!-- YAN MENÜ (SIDEBAR) -->
-<aside class="sidebar">
-    <div class="widget">
-        <h4>Tüm Hizmetlerimiz</h4>
-        <ul>
-            <li><a href="hizmet-dernek-kurulusu.html">Dernek Kuruluşu</a></li>
-            <li><a href="hizmet-vakif-kurulusu.html">Vakıf Kuruluşu</a></li>
-            <li><a href="hizmet-genel-kurul.html">Genel Kurul Yönetimi</a></li>
-            <li><a href="hizmet-mali-danismanlik.html">Mali Danışmanlık</a></li>
-            <li><a href="hizmet-proje-yazma.html" class="current">Proje ve Fon Geliştirme</a></li>
-            <li><a href="hizmet-yasal-danismanlik.html">Yasal Danışmanlık</a></li>
-        </ul>
-    </div>
-    <div class="widget">
-        <h4>Hızlı Teklif Alın</h4>
-        <p>Proje fikirlerinizi hayata geçirmek için teklif isteyin.</p>
-        <a href="iletisim.html" class="btn btn-secondary" style="width: 100%;">Teklif İsteyin</a>
-    </div>
-</aside>
+                    <!-- ANA İÇERİK BÖLÜMÜ -->
+                    <div class="main-content">
+                        <h2>Fikirlerinizi Sürdürülebilir Projelere Dönüştürün</h2>
+                        <p>Sivil toplum kuruluşlarının en büyük hedeflerinden biri, misyonları doğrultusunda etkili ve sürdürülebilir projeler hayata geçirmektir. Ancak parlak bir fikir, doğru finansal kaynak ve profesyonel bir proje planı olmadan kağıt üzerinde kalmaya mahkumdur. Ulusal ve uluslararası hibe programları, bu noktada STK'lar için büyük bir fırsat sunar.</p>
+                        <p>SH Danışmanlık olarak, proje fikrinizin geliştirilmesinden, uygun hibe programının bulunmasına kadar tüm aşamalarda size uzman desteği sağlıyoruz. Proje Döngüsü Yönetimi (PCM) metodolojisine hakim ekibimizle, başvurularınızın kabul edilme şansını en üst seviyeye çıkarıyoruz.</p>
+                        
+                        <h3 style="margin-top: 40px;">Proje Geliştirme Hizmetlerimiz</h3>
+                        
+                        <div class="feature-box">
+                            <div class="icon-wrapper"><i class="fas fa-search-dollar"></i></div>
+                            <div>
+                                <h4>Fon Araştırması ve Hibe Takibi</h4>
+                                <p>Kurumunuzun faaliyet alanına ve hedeflerine en uygun ulusal (TÜBİTAK, KOSGEB, Kalkınma Ajansları) ve uluslararası (AB, Erasmus+, elçilikler) fon kaynaklarını takip ederiz.</p>
+                            </div>
+                        </div>
+                        <div class="feature-box">
+                            <div class="icon-wrapper"><i class="fas fa-tasks"></i></div>
+                            <div>
+                                <h4>Proje Döngüsü Yönetimi (PCM)</h4>
+                                <p>Proje fikrinin analizi, mantıksal çerçeve oluşturulması, faaliyet planı ve bütçenin hazırlanması gibi PCM adımlarında rehberlik ederiz.</p>
+                            </div>
+                        </div>
+                        <div class="feature-box">
+                            <div class="icon-wrapper"><i class="fas fa-file-powerpoint"></i></div>
+                            <div>
+                                <h4>Başvuru Dosyası Hazırlığı</h4>
+                                <p>İlgili fon programının rehberlerini detaylıca analiz ederek, projenizi en güçlü ve ikna edici şekilde sunan eksiksiz bir başvuru dosyası hazırlarız.</p>
+                            </div>
+                        </div>
+                        <div class="feature-box">
+                            <div class="icon-wrapper"><i class="fas fa-cogs"></i></div>
+                            <div>
+                                <h4>Proje Yürütme ve Raporlama</h4>
+                                <p>Kabul edilen projelerinizin faaliyetlerinin yürütülmesi ve fon sağlayıcıya sunulacak ara/final raporlarının hazırlanması konularında destek oluruz.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- YAN MENÜ (SIDEBAR) -->
+                    <aside class="sidebar">
+                        <div class="widget">
+                            <h4>Tüm Hizmetlerimiz</h4>
+                            <ul>
+                                <li><a href="hizmet-dernek-kurulusu.html">Dernek Kuruluşu</a></li>
+                                <li><a href="hizmet-vakif-kurulusu.html">Vakıf Kuruluşu</a></li>
+                                <li><a href="hizmet-genel-kurul.html">Genel Kurul Yönetimi</a></li>
+                                <li><a href="hizmet-mali-danismanlik.html">Mali Danışmanlık</a></li>
+                                <li><a href="hizmet-proje-yazma.html" class="current">Proje ve Fon Geliştirme</a></li>
+                                <li><a href="hizmet-yasal-danismanlik.html">Yasal Danışmanlık</a></li>
+                            </ul>
+                        </div>
+                        <div class="widget">
+                            <h4>Hızlı Teklif Alın</h4>
+                            <p>Proje fikirlerinizi hayata geçirmek için teklif isteyin.</p>
+                            <a href="iletisim.html" class="btn btn-secondary" style="width: 100%;">Teklif İsteyin</a>
+                        </div>
+                    </aside>
                 </div>
             </div>
         </section>
     </main>
 
-    <<footer class="main-footer">
-    <div class="container">
-        <div class="footer-grid">
+    <!-- Footer (SEO ve Performans Optimize Edildi) -->
+    <footer class="main-footer">
+        <div class="container">
+            <div class="footer-grid">
+                <!-- Logo ve Slogan -->
+                <div class="footer-col">
+                    <img src="logo.webp" alt="SH Danışmanlık Footer Logo" class="footer-logo" width="150" height="40" loading="lazy">
+                    <p>"Bize Uğrayın, Bürokrasiye Takılmayın"</p>
+                    <p>© 2025 SH Danışmanlık. Tüm Hakları Saklıdır.</p>
+                </div>
 
-            <!-- Logo ve Slogan -->
-            <div class="footer-col">
-                <img src="logo.webp" alt="SH Danışmanlık Footer Logo" class="footer-logo">
-                <p>"Bize Uğrayın, Bürokrasiye Takılmayın"</p>
-                <p>© 2025 SH Danışmanlık. Tüm Hakları Saklıdır.</p>
-            </div>
+                <!-- Hızlı Menü -->
+                <div class="footer-col">
+                    <h4>Hızlı Menü</h4>
+                    <ul>
+                        <li><a href="hakkimizda.html">Hakkımızda</a></li>
+                        <li><a href="hizmetlerimiz.html">Hizmetlerimiz</a></li>
+                        <li><a href="blog.html">Blog</a></li>
+                        <li><a href="iletisim.html">İletişim</a></li>
+                    </ul>
+                </div>
 
-            <!-- Hızlı Menü -->
-            <div class="footer-col">
-                <h4>Hızlı Menü</h4>
-                <ul>
-                    <li><a href="hakkimizda.html">Hakkımızda</a></li>
-                    <li><a href="hizmetlerimiz.html">Hizmetlerimiz</a></li>
-                    <li><a href="blog.html">Blog</a></li>
-                    <li><a href="iletisim.html">İletişim</a></li>
-                </ul>
-            </div>
+                <!-- İletişim Bilgileri -->
+                <div class="footer-col">
+                    <h4>İletişim</h4>
+                    <p><i class="fas fa-map-marker-alt" aria-hidden="true"></i> İstanbul</p>
+                    <p><i class="fas fa-phone" aria-hidden="true"></i> +90 534 705 42 34</p>
+                    <p><i class="fas fa-envelope" aria-hidden="true"></i> info@shdanismanlik.com</p>
+                </div>
 
-            <!-- İletişim Bilgileri -->
-            <div class="footer-col">
-                <h4>İletişim</h4>
-                <p><i class="fas fa-map-marker-alt" aria-hidden="true"></i> Örnek Mah. No:1, İstanbul</p>
-                <p><i class="fas fa-phone" aria-hidden="true"></i> +90 555 123 45 67</p>
-                <p><i class="fas fa-envelope" aria-hidden="true"></i> info@shdanismanlik.com</p>
-            </div>
-
-            <!-- Sosyal Medya -->
-            <div class="footer-col">
-                <h4>Bizi Takip Edin</h4>
-                <div class="social-icons">
-                    <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in" aria-hidden="true"></i></a>
-                    <a href="#" aria-label="Twitter"><i class="fab fa-twitter" aria-hidden="true"></i></a>
-                    <a href="#" aria-label="Instagram"><i class="fab fa-instagram" aria-hidden="true"></i></a>
+                <!-- Sosyal Medya -->
+                <div class="footer-col">
+                    <h4>Bizi Takip Edin</h4>
+                    <div class="social-icons">
+                        <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                        <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                    </div>
                 </div>
             </div>
-        </div>
 
-        <!-- Alt Satır - Telif & Tasarımcı -->
-        <div class="footer-bottom" style="margin-top: 20px; text-align: center; font-size: 13px; color: #aaa;">
-            <p>© 2025 Tasarım ve Yazılım. Design by <a href="https://akodijital.com" target="_blank" style="color: #00aced; text-decoration: none;">AKODİJİTAL</a></p>
+            <!-- Alt Satır -->
+            <div class="footer-bottom" style="margin-top: 20px; text-align: center; font-size: 13px; color: #aaa;">
+                <p>© 2025 Tasarım ve Yazılım. <a href="https://akodijital.com" target="_blank" style="color: #00aced; text-decoration: none;">AKODİJİTAL</a></p>
+            </div>
         </div>
-    </div>
-</footer>
-
+    </footer>
 
     <script src="js/script.js"></script>
+
+    <!-- GetButton.io widget - Sayfa sonuna taşındı (Hız için kritik) -->
+    <script type="text/javascript">
+        (function () {
+            var options = {
+                whatsapp: "+905347054234",
+                call_to_action: "Bize Yazın",
+                position: "left",
+            };
+            var proto = document.location.protocol, host = "getbutton.io", url = proto + "//static." + host;
+            var s = document.createElement('script'); s.type = 'text/javascript'; s.async = true; s.src = url + '/widget-send-button/js/init.js';
+            s.onload = function () { WhWidgetSendButton.init(host, proto, options); };
+            var x = document.getElementsByTagName('script')[0]; x.parentNode.insertBefore(s, x);
+        })();
+    </script>
 </body>
 </html>

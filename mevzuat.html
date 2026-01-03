@@ -4,8 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>STK Mevzuatları ve Kanunlar - SH Danışmanlık</title>
-<meta name="description" content="Dernekler Kanunu, Vakıflar Kanunu, Yardım Toplama Kanunu ve ilgili diğer önemli mevzuatlara ve yönetmeliklere kolayca ulaşın.">
+    <meta name="description" content="Dernekler Kanunu, Vakıflar Kanunu, Yardım Toplama Kanunu ve ilgili diğer önemli mevzuatlara ve yönetmeliklere kolayca ulaşın.">
     
+    <!-- LCP PERFORMANS: Sayfa başındaki ana banner görselini önceden yükle (Hız için kritik) -->
+    <link rel="preload" as="image" href="img/banner3.webp" fetchpriority="high">
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
@@ -16,209 +19,192 @@
 </head>
 <body>
 
-<!-- GetButton.io widget -->
-<script type="text/javascript">
-    (function () {
-        var options = {
-            whatsapp: "+905347054234", // WhatsApp number
-            call_to_action: "SH DANIŞMANLIK Nasıl Yardımcı Olabiliriz.", // Call to action
-            position: "left", // Position may be 'right' or 'left'
-        };
-        var proto = document.location.protocol, host = "getbutton.io", url = proto + "//static." + host;
-        var s = document.createElement('script'); s.type = 'text/javascript'; s.async = true; s.src = url + '/widget-send-button/js/init.js';
-        s.onload = function () { WhWidgetSendButton.init(host, proto, options); };
-        var x = document.getElementsByTagName('script')[0]; x.parentNode.insertBefore(s, x);
-    })();
-</script>
-<!-- /GetButton.io widget -->
-    <!-- Header (Ana sayfadaki ile aynı) -->
+    <!-- Header (SEO ve Hız Optimize Edildi) -->
     <header class="main-header">
-  <div class="container header-container">
-    
-    <!-- Logo -->
-    <a href="index.html" class="logo-container">
-      <img src="logo.webp" alt="SH Danışmanlık Logosu" class="logo-img" />
-    </a>
+      <div class="container header-container">
+        <!-- Logo Boyutları Sabitlendi (CLS ve Best Practices Fix) -->
+        <a href="index.html" class="logo-container">
+          <img src="logo.webp" alt="SH Danışmanlık Logosu" class="logo-img" width="180" height="50" />
+        </a>
 
-    <!-- Navigasyon Menüsü -->
-    <nav class="main-nav">
-      <!-- MOBİL MENÜ KAPATMA BUTONU (Çarpı) -->
-      <button class="nav-close-btn" aria-label="Menüyü kapat">
-        <i class="fas fa-times"></i>
-      </button>
+        <!-- Navigasyon Menüsü -->
+        <nav class="main-nav">
+          <button class="nav-close-btn" aria-label="Menüyü kapat">
+            <i class="fas fa-times"></i>
+          </button>
 
-      <ul>
-        <li><a href="index.html">Ana Sayfa</a></li>
-        <li class="dropdown">
-          <a href="#">Kurumsal <i class="fas fa-chevron-down" aria-hidden="true"></i></a>
-          <ul class="dropdown-menu">
-            <li><a href="hakkimizda.html">Hakkımızda</a></li>
-            <li><a href="sss.html">Sıkça Sorulan Sorular</a></li>
+          <ul>
+            <li><a href="index.html">Ana Sayfa</a></li>
+            <li class="dropdown">
+              <a href="#">Kurumsal <i class="fas fa-chevron-down" aria-hidden="true"></i></a>
+              <ul class="dropdown-menu">
+                <li><a href="hakkimizda.html">Hakkımızda</a></li>
+                <li><a href="sss.html">Sıkça Sorulan Sorular</a></li>
+              </ul>
+            </li>
+            <li class="dropdown">
+              <a href="hizmetlerimiz.html">Hizmetlerimiz <i class="fas fa-chevron-down" aria-hidden="true"></i></a>
+              <ul class="dropdown-menu">
+                <li><a href="hizmet-dernek-kurulusu.html">Dernek Kuruluşu</a></li>
+                <li><a href="hizmet-vakif-kurulusu.html">Vakıf Kuruluşu</a></li>
+                <li><a href="hizmet-genel-kurul.html">Genel Kurul Yönetimi</a></li>
+                <li><a href="hizmet-mali-danismanlik.html">Mali Danışmanlık</a></li>
+                <li><a href="hizmet-proje-yazma.html">Proje ve Fon Geliştirme</a></li>
+                <li><a href="hizmet-yasal-danismanlik.html">Yasal Danışmanlık</a></li>
+              </ul>
+            </li>
+            <li class="dropdown">
+              <a href="#" class="active">Bilgi Bankası <i class="fas fa-chevron-down" aria-hidden="true"></i></a>
+              <ul class="dropdown-menu">
+                <li><a href="blog.html">Blog & Makaleler</a></li>
+                <li><a href="mevzuat.html">Mevzuatlar</a></li>
+              </ul>
+            </li>
+            <li><a href="referanslar.html">Referanslar</a></li>
+            <li><a href="iletisim.html">İletişim</a></li>
           </ul>
-        </li>
-        <li class="dropdown">
-          <a href="hizmetlerimiz.html">Hizmetlerimiz <i class="fas fa-chevron-down" aria-hidden="true"></i></a>
-          <ul class="dropdown-menu">
-            <li><a href="hizmet-dernek-kurulusu.html">Dernek Kuruluşu</a></li>
-            <li><a href="hizmet-vakif-kurulusu.html">Vakıf Kuruluşu</a></li>
-            <li><a href="hizmet-genel-kurul.html">Genel Kurul Yönetimi</a></li>
-            <li><a href="hizmet-mali-danismanlik.html">Mali Danışmanlık</a></li>
-            <li><a href="hizmet-proje-yazma.html">Proje ve Fon Geliştirme</a></li>
-            <li><a href="hizmet-yasal-danismanlik.html">Yasal Danışmanlık</a></li>
-          </ul>
-        </li>
-        <li class="dropdown">
-          <a href="#"class="active">Bilgi Bankası <i class="fas fa-chevron-down" aria-hidden="true"></i></a>
-          <ul class="dropdown-menu">
-            <li><a href="blog.html">Blog & Makaleler</a></li>
-            <li><a href="mevzuat.html">Mevzuatlar</a></li>
-          </ul>
-        </li>
-        <li><a href="referanslar.html">Referanslar</a></li>
-        <li><a href="iletisim.html">İletişim</a></li>
-      </ul>
-    </nav>
+        </nav>
 
-
-      <!-- MOBİL MENÜ AÇMA BUTONU (Hamburger) -->
-      <button class="nav-open-btn" aria-label="Menüyü aç">
-        <i class="fas fa-bars"></i>
-      </button>
-    </div>
-  </div>
-</header>
+        <button class="nav-open-btn" aria-label="Menüyü aç">
+          <i class="fas fa-bars"></i>
+        </button>
+      </div>
+    </header>
 
     <main>
         <!-- İÇ SAYFA BAŞLIK BANNER'I -->
-<section class="page-header" style="background-image: url('img/banner3.webp');">
-    <div class="container">
-        <h1>Önemli Mevzuatlar</h1>
-        <p>Sivil toplum alanını düzenleyen temel yasal metinler.</p>
-    </div>
-</section>
+        <section class="page-header" style="background-image: url('img/banner3.webp');">
+            <div class="container">
+                <h1>Önemli Mevzuatlar</h1>
+                <p>Sivil toplum alanını düzenleyen temel yasal metinler.</p>
+            </div>
+        </section>
 
         <!-- İÇERİK ALANI -->
         <section class="page-content">
             <div class="container">
                 <div class="content-grid">
-                         <!-- ANA İÇERİK BÖLÜMÜ -->
-<div class="main-content">
-    <h2>Temel Kanunlar ve Yönetmelikler</h2>
-    <p>Sivil toplum kuruluşlarının yasal çerçevesini oluşturan en önemli kanun ve yönetmeliklere aşağıdaki bağlantılardan veya özet metinlerden ulaşabilirsiniz. Bu metinler, dernek ve vakıfların uymakla yükümlü olduğu temel kuralları içerir. Unutmayın ki mevzuat dinamik bir yapıya sahiptir ve sürekli güncellenmektedir. En güncel ve detaylı bilgi için profesyonel danışmanlık hizmeti almanızı öneririz.</p>
-    
-    <div class="mevzuat-list">
-        <!-- Mevzuat Öğesi 1 -->
-        <div class="mevzuat-item">
-            <div class="mevzuat-icon"><i class="fas fa-landmark"></i></div>
-            <div class="mevzuat-content">
-                <h4>5253 Sayılı Dernekler Kanunu</h4>
-                <p>Türkiye'de derneklerin kuruluşu, organları, işleyişi, denetimi ve feshi gibi temel konuları düzenleyen ana kanundur.</p>
-                <a href="https://www.mevzuat.gov.tr/mevzuat?MevzuatNo=5253&MevzuatTur=1&MevzuatTertip=5" target="_blank" class="btn-read-more">Resmi Metni Görüntüle <i class="fas fa-external-link-alt"></i></a>
-            </div>
-        </div>
+                    <!-- ANA İÇERİK BÖLÜMÜ -->
+                    <div class="main-content">
+                        <h2>Temel Kanunlar ve Yönetmelikler</h2>
+                        <p>Sivil toplum kuruluşlarının yasal çerçevesini oluşturan en önemli metinlere aşağıdan ulaşabilirsiniz. En güncel bilgi için profesyonel destek almanızı öneririz.</p>
+                        
+                        <div class="mevzuat-list">
+                            <div class="mevzuat-item">
+                                <div class="mevzuat-icon"><i class="fas fa-landmark"></i></div>
+                                <div class="mevzuat-content">
+                                    <h4>5253 Sayılı Dernekler Kanunu</h4>
+                                    <p>Türkiye'de derneklerin kuruluşu, işleyişi ve denetimi gibi temel konuları düzenleyen ana kanundur.</p>
+                                    <a href="https://www.mevzuat.gov.tr/mevzuat?MevzuatNo=5253&MevzuatTur=1&MevzuatTertip=5" target="_blank" class="btn-read-more" rel="noopener">Resmi Metni Görüntüle <i class="fas fa-external-link-alt"></i></a>
+                                </div>
+                            </div>
 
-        <!-- Mevzuat Öğesi 2 -->
-        <div class="mevzuat-item">
-            <div class="mevzuat-icon"><i class="fas fa-balance-scale"></i></div>
-            <div class="mevzuat-content">
-                <h4>4721 Sayılı Türk Medeni Kanunu (Vakıflar Bölümü)</h4>
-                <p>Vakıfların tanımı, kuruluşu, organları ve sona ermesi gibi temel hukuki düzenlemeler Medeni Kanun'un ilgili maddelerinde yer alır.</p>
-                <a href="https://www.mevzuat.gov.tr/mevzuat?MevzuatNo=4721&MevzuatTur=1&MevzuatTertip=5" target="_blank" class="btn-read-more">Resmi Metni Görüntüle <i class="fas fa-external-link-alt"></i></a>
-            </div>
-        </div>
+                            <div class="mevzuat-item">
+                                <div class="mevzuat-icon"><i class="fas fa-balance-scale"></i></div>
+                                <div class="mevzuat-content">
+                                    <h4>4721 Sayılı Türk Medeni Kanunu (Vakıflar)</h4>
+                                    <p>Vakıfların tanımı, kuruluşu ve sona ermesi gibi temel hukuki düzenlemeleri içerir.</p>
+                                    <a href="https://www.mevzuat.gov.tr/mevzuat?MevzuatNo=4721&MevzuatTur=1&MevzuatTertip=5" target="_blank" class="btn-read-more" rel="noopener">Resmi Metni Görüntüle <i class="fas fa-external-link-alt"></i></a>
+                                </div>
+                            </div>
 
-        <!-- Mevzuat Öğesi 3 -->
-        <div class="mevzuat-item">
-            <div class="mevzuat-icon"><i class="fas fa-hand-holding-heart"></i></div>
-            <div class="mevzuat-content">
-                <h4>2860 Sayılı Yardım Toplama Kanunu</h4>
-                <p>Dernek ve vakıfların halktan yardım toplama faaliyetlerinin hangi usul ve esaslara göre yapılacağını düzenleyen kanundur.</p>
-                <a href="https://www.mevzuat.gov.tr/mevzuat?MevzuatNo=2860&MevzuatTur=1&MevzuatTertip=5" target="_blank" class="btn-read-more">Resmi Metni Görüntüle <i class="fas fa-external-link-alt"></i></a>
-            </div>
-        </div>
+                            <div class="mevzuat-item">
+                                <div class="mevzuat-icon"><i class="fas fa-hand-holding-heart"></i></div>
+                                <div class="mevzuat-content">
+                                    <h4>2860 Sayılı Yardım Toplama Kanunu</h4>
+                                    <p>Halktan yardım toplama faaliyetlerinin hangi usul ve esaslara göre yapılacağını düzenler.</p>
+                                    <a href="https://www.mevzuat.gov.tr/mevzuat?MevzuatNo=2860&MevzuatTur=1&MevzuatTertip=5" target="_blank" class="btn-read-more" rel="noopener">Resmi Metni Görüntüle <i class="fas fa-external-link-alt"></i></a>
+                                </div>
+                            </div>
 
-        <!-- Mevzuat Öğesi 4 -->
-        <div class="mevzuat-item">
-            <div class="mevzuat-icon"><i class="fas fa-file-alt"></i></div>
-            <div class="mevzuat-content">
-                <h4>Dernekler Yönetmeliği</h4>
-                <p>Dernekler Kanunu'nun uygulanmasına ilişkin detayları, tutulacak defterleri, bildirimleri ve diğer usulleri içeren yönetmeliktir.</p>
-                <a href="https://www.mevzuat.gov.tr/mevzuat?MevzuatNo=8080&MevzuatTur=7&MevzuatTertip=5" target="_blank" class="btn-read-more">Resmi Metni Görüntüle <i class="fas fa-external-link-alt"></i></a>
-            </div>
-        </div>
-    </div>
-</div>
+                            <div class="mevzuat-item">
+                                <div class="mevzuat-icon"><i class="fas fa-file-alt"></i></div>
+                                <div class="mevzuat-content">
+                                    <h4>Dernekler Yönetmeliği</h4>
+                                    <p>Kanunun uygulanmasına ilişkin detayları, tutulacak defterleri ve bildirim usullerini içerir.</p>
+                                    <a href="https://www.mevzuat.gov.tr/mevzuat?MevzuatNo=8080&MevzuatTur=7&MevzuatTertip=5" target="_blank" class="btn-read-more" rel="noopener">Resmi Metni Görüntüle <i class="fas fa-external-link-alt"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
 
-                    <!-- YAN MENÜ (SIDEBAR) -->
-
-<aside class="sidebar">
-    <div class="widget">
-        <h4>Bilgi Bankası</h4>
-        <ul>
-            <li><a href="blog.html">Blog & Makaleler</a></li>
-            <li><a href="mevzuat.html" class="current">Önemli Mevzuatlar</a></li>
-        </ul>
-    </div>
-    <div class="widget">
-        <h4>Mevzuat Karmaşık Mı Geldi?</h4>
-        <p>Yasal süreçlerde hata yapmamak ve güncel bilgilere ulaşmak için uzman ekibimizden destek alın.</p>
-        <a href="iletisim.html" class="btn btn-secondary" style="width: 100%;">Danışmanlık Al</a>
-    </div>
-</aside>
+                    <!-- SIDEBAR -->
+                    <aside class="sidebar">
+                        <div class="widget">
+                            <h4>Bilgi Bankası</h4>
+                            <ul>
+                                <li><a href="blog.html">Blog & Makaleler</a></li>
+                                <li><a href="mevzuat.html" class="current">Önemli Mevzuatlar</a></li>
+                            </ul>
+                        </div>
+                        <div class="widget">
+                            <h4>Mevzuat Karmaşık Mı Geldi?</h4>
+                            <p>Yasal süreçlerde hata yapmamak için uzman ekibimizden destek alın.</p>
+                            <a href="iletisim.html" class="btn btn-secondary" style="width: 100%;">Danışmanlık Al</a>
+                        </div>
+                    </aside>
                 </div>
             </div>
         </section>
     </main>
 
+    <!-- WhatsApp Floating Button -->
+    <a href="https://wa.me/905347054234" class="whatsapp-float" target="_blank" rel="noopener" aria-label="WhatsApp İletişim">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
     <footer class="main-footer">
-    <div class="container">
-        <div class="footer-grid">
-
-            <!-- Logo ve Slogan -->
-            <div class="footer-col">
-                <img src="logo.webp" alt="SH Danışmanlık Footer Logo" class="footer-logo">
-                <p>"Bize Uğrayın, Bürokrasiye Takılmayın"</p>
-                <p>© 2025 SH Danışmanlık. Tüm Hakları Saklıdır.</p>
-            </div>
-
-            <!-- Hızlı Menü -->
-            <div class="footer-col">
-                <h4>Hızlı Menü</h4>
-                <ul>
-                    <li><a href="hakkimizda.html">Hakkımızda</a></li>
-                    <li><a href="hizmetlerimiz.html">Hizmetlerimiz</a></li>
-                    <li><a href="blog.html">Blog</a></li>
-                    <li><a href="iletisim.html">İletişim</a></li>
-                </ul>
-            </div>
-
-            <!-- İletişim Bilgileri -->
-            <div class="footer-col">
-                <h4>İletişim</h4>
-                <p><i class="fas fa-map-marker-alt" aria-hidden="true"></i> Örnek Mah. No:1, İstanbul</p>
-                <p><i class="fas fa-phone" aria-hidden="true"></i> +90 555 123 45 67</p>
-                <p><i class="fas fa-envelope" aria-hidden="true"></i> info@shdanismanlik.com</p>
-            </div>
-
-            <!-- Sosyal Medya -->
-            <div class="footer-col">
-                <h4>Bizi Takip Edin</h4>
-                <div class="social-icons">
-                    <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in" aria-hidden="true"></i></a>
-                    <a href="#" aria-label="Twitter"><i class="fab fa-twitter" aria-hidden="true"></i></a>
-                    <a href="#" aria-label="Instagram"><i class="fab fa-instagram" aria-hidden="true"></i></a>
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <img src="logo.webp" alt="SH Danışmanlık Footer Logo" class="footer-logo" width="150" height="40" loading="lazy">
+                    <p>"Bize Uğrayın, Bürokrasiye Takılmayın"</p>
+                    <p>© 2025 SH Danışmanlık.</p>
+                </div>
+                <div class="footer-col">
+                    <h4>Hızlı Menü</h4>
+                    <ul>
+                        <li><a href="hakkimizda.html">Hakkımızda</a></li>
+                        <li><a href="hizmetlerimiz.html">Hizmetlerimiz</a></li>
+                        <li><a href="blog.html">Blog</a></li>
+                        <li><a href="iletisim.html">İletişim</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>İletişim</h4>
+                    <p><i class="fas fa-map-marker-alt"></i> İstanbul</p>
+                    <p><i class="fas fa-phone"></i> +90 534 705 42 34</p>
+                    <p><i class="fas fa-envelope"></i> info@shdanismanlik.com</p>
+                </div>
+                <div class="footer-col">
+                    <h4>Bizi Takip Edin</h4>
+                    <div class="social-icons">
+                        <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                    </div>
                 </div>
             </div>
+            <div class="footer-bottom" style="margin-top: 20px; text-align: center; font-size: 13px; color: #aaa;">
+                <p>© 2025 Tasarım ve Yazılım. <a href="https://akodijital.com" target="_blank" style="color: #00aced; text-decoration: none;">AKODİJİTAL</a></p>
+            </div>
         </div>
-
-        <!-- Alt Satır - Telif & Tasarımcı -->
-        <div class="footer-bottom" style="margin-top: 20px; text-align: center; font-size: 13px; color: #aaa;">
-            <p>© 2025 Tasarım ve Yazılım. Design by <a href="https://akodijital.com" target="_blank" style="color: #00aced; text-decoration: none;">AKODİJİTAL</a></p>
-        </div>
-    </div>
-</footer>
-
+    </footer>
 
     <script src="js/script.js"></script>
+
+    <!-- GetButton.io widget - Sayfa sonuna taşındı (Hız için kritik) -->
+    <script type="text/javascript">
+        (function () {
+            var options = {
+                whatsapp: "+905347054234",
+                call_to_action: "Bize Yazın",
+                position: "left",
+            };
+            var proto = document.location.protocol, host = "getbutton.io", url = proto + "//static." + host;
+            var s = document.createElement('script'); s.type = 'text/javascript'; s.async = true; s.src = url + '/widget-send-button/js/init.js';
+            s.onload = function () { WhWidgetSendButton.init(host, proto, options); };
+            var x = document.getElementsByTagName('script')[0]; x.parentNode.insertBefore(s, x);
+        })();
+    </script>
 </body>
 </html>

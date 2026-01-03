@@ -4,7 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Blog & Makaleler - SH Danışmanlık Bilgi Bankası</title>
-<meta name="description" content="STK, dernek ve vakıf yönetimi hakkında güncel makaleler, rehberler ve uzman görüşleri. Dernekler mevzuatı ve proje yönetimi üzerine en son bilgiler.">    
+    <meta name="description" content="STK, dernek ve vakıf yönetimi hakkında güncel makaleler, rehberler ve uzman görüşleri. Dernekler mevzuatı ve proje yönetimi üzerine en son bilgiler.">    
+    
+    <!-- LCP PERFORMANS: Sayfa başındaki ana banner görselini önceden yükle -->
+    <link rel="preload" as="image" href="img/banner1.webp" fetchpriority="high">
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
@@ -15,218 +19,207 @@
 </head>
 <body>
 
-<!-- GetButton.io widget -->
-<script type="text/javascript">
-    (function () {
-        var options = {
-            whatsapp: "+905347054234", // WhatsApp number
-            call_to_action: "SH DANIŞMANLIK Nasıl Yardımcı Olabiliriz.", // Call to action
-            position: "left", // Position may be 'right' or 'left'
-        };
-        var proto = document.location.protocol, host = "getbutton.io", url = proto + "//static." + host;
-        var s = document.createElement('script'); s.type = 'text/javascript'; s.async = true; s.src = url + '/widget-send-button/js/init.js';
-        s.onload = function () { WhWidgetSendButton.init(host, proto, options); };
-        var x = document.getElementsByTagName('script')[0]; x.parentNode.insertBefore(s, x);
-    })();
-</script>
-<!-- /GetButton.io widget -->
-
-
-
-    <!-- Header (Ana sayfadaki ile aynı) -->
     <header class="main-header">
-  <div class="container header-container">
-    
-    <!-- Logo -->
-    <a href="index.html" class="logo-container">
-      <img src="logo.webp" alt="SH Danışmanlık Logosu" class="logo-img" />
-    </a>
+      <div class="container header-container">
+        <!-- Logo - Width ve Height belirtildi (Best Practices + CLS Fix) -->
+        <a href="index.html" class="logo-container">
+          <img src="logo.webp" alt="SH Danışmanlık Logosu" class="logo-img" width="180" height="50" />
+        </a>
 
-    <!-- Navigasyon Menüsü -->
-    <nav class="main-nav">
-      <!-- MOBİL MENÜ KAPATMA BUTONU (Çarpı) -->
-      <button class="nav-close-btn" aria-label="Menüyü kapat">
-        <i class="fas fa-times"></i>
-      </button>
+        <nav class="main-nav">
+          <button class="nav-close-btn" aria-label="Menüyü kapat">
+            <i class="fas fa-times"></i>
+          </button>
 
-      <ul>
-        <li><a href="index.html">Ana Sayfa</a></li>
-        <li class="dropdown">
-          <a href="#">Kurumsal <i class="fas fa-chevron-down" aria-hidden="true"></i></a>
-          <ul class="dropdown-menu">
-            <li><a href="hakkimizda.html">Hakkımızda</a></li>
-            <li><a href="sss.html">Sıkça Sorulan Sorular</a></li>
+          <ul>
+            <li><a href="index.html">Ana Sayfa</a></li>
+            <li class="dropdown">
+              <a href="#">Kurumsal <i class="fas fa-chevron-down" aria-hidden="true"></i></a>
+              <ul class="dropdown-menu">
+                <li><a href="hakkimizda.html">Hakkımızda</a></li>
+                <li><a href="sss.html">Sıkça Sorulan Sorular</a></li>
+              </ul>
+            </li>
+            <li class="dropdown">
+              <a href="hizmetlerimiz.html">Hizmetlerimiz <i class="fas fa-chevron-down" aria-hidden="true"></i></a>
+              <ul class="dropdown-menu">
+                <li><a href="hizmet-dernek-kurulusu.html">Dernek Kuruluşu</a></li>
+                <li><a href="hizmet-vakif-kurulusu.html">Vakıf Kuruluşu</a></li>
+                <li><a href="hizmet-genel-kurul.html">Genel Kurul Yönetimi</a></li>
+                <li><a href="hizmet-mali-danismanlik.html">Mali Danışmanlık</a></li>
+                <li><a href="hizmet-proje-yazma.html">Proje ve Fon Geliştirme</a></li>
+                <li><a href="hizmet-yasal-danismanlik.html">Yasal Danışmanlık</a></li>
+              </ul>
+            </li>
+            <li class="dropdown">
+              <a href="#" class="active">Bilgi Bankası <i class="fas fa-chevron-down" aria-hidden="true"></i></a>
+              <ul class="dropdown-menu">
+                <li><a href="blog.html">Blog & Makaleler</a></li>
+                <li><a href="mevzuat.html">Mevzuatlar</a></li>
+              </ul>
+            </li>
+            <li><a href="referanslar.html">Referanslar</a></li>
+            <li><a href="iletisim.html">İletişim</a></li>
           </ul>
-        </li>
-        <li class="dropdown">
-          <a href="hizmetlerimiz.html">Hizmetlerimiz <i class="fas fa-chevron-down" aria-hidden="true"></i></a>
-          <ul class="dropdown-menu">
-            <li><a href="hizmet-dernek-kurulusu.html">Dernek Kuruluşu</a></li>
-            <li><a href="hizmet-vakif-kurulusu.html">Vakıf Kuruluşu</a></li>
-            <li><a href="hizmet-genel-kurul.html">Genel Kurul Yönetimi</a></li>
-            <li><a href="hizmet-mali-danismanlik.html">Mali Danışmanlık</a></li>
-            <li><a href="hizmet-proje-yazma.html">Proje ve Fon Geliştirme</a></li>
-            <li><a href="hizmet-yasal-danismanlik.html">Yasal Danışmanlık</a></li>
-          </ul>
-        </li>
-        <li class="dropdown">
-          <a href="#"class="active">Bilgi Bankası <i class="fas fa-chevron-down" aria-hidden="true"></i></a>
-          <ul class="dropdown-menu">
-            <li><a href="blog.html">Blog & Makaleler</a></li>
-            <li><a href="mevzuat.html">Mevzuatlar</a></li>
-          </ul>
-        </li>
-        <li><a href="referanslar.html">Referanslar</a></li>
-        <li><a href="iletisim.html">İletişim</a></li>
-      </ul>
-    </nav>
+        </nav>
 
-
-      <!-- MOBİL MENÜ AÇMA BUTONU (Hamburger) -->
-      <button class="nav-open-btn" aria-label="Menüyü aç">
-        <i class="fas fa-bars"></i>
-      </button>
-    </div>
-  </div>
-</header>
+        <button class="nav-open-btn" aria-label="Menüyü aç">
+          <i class="fas fa-bars"></i>
+        </button>
+      </div>
+    </header>
 
     <main>
         <!-- İÇ SAYFA BAŞLIK BANNER'I -->
-        <section class="page-header" style="background-image: url('img/banner1.webp');"> <!-- Farklı bir banner resmi -->
-    <div class="container">
-        <h1>Blog & Makaleler</h1>
-        <p>Sektörden en güncel bilgiler, rehberler ve uzman analizleri.</p>
-    </div>
-</section>
+        <section class="page-header" style="background-image: url('img/banner1.webp');">
+            <div class="container">
+                <h1>Blog & Makaleler</h1>
+                <p>Sektörden en güncel bilgiler, rehberler ve uzman analizleri.</p>
+            </div>
+        </section>
 
         <!-- İÇERİK ALANI -->
         <section class="page-content">
             <div class="container">
                 <div class="content-grid">
                     <!-- ANA İÇERİK BÖLÜMÜ -->
-<div class="main-content">
-    
-    <!-- Blog Yazısı Kartı 1 -->
-    <article class="blog-post-card">
-        <a href="blog-yazi-detay.html" class="post-image-link">
-            <img src="https://images.unsplash.com/photo-1556761175-5973dc0f32e7?w=800" alt="İki iş insanı el sıkışıyor">
-        </a>
-        <div class="post-content">
-            <div class="post-meta">
-                <span><i class="fas fa-calendar-alt"></i> 15 Ekim 2025</span>
-                <span><i class="fas fa-tag"></i> Rehber</span>
-            </div>
-            <h2 class="post-title"><a href="blog-yazi-detay.html">Dernek ve Vakıf Arasındaki 5 Temel Fark Nedir?</a></h2>
-            <p class="post-excerpt">Bir sosyal sorumluluk projesine başlarken en sık karşılaşılan sorulardan biri, "Dernek mi kurmalıyız, yoksa vakıf mı?" sorusudur. Her ikisi de topluma hizmet etme amacı güderken, yasal yapıları, kuruluş süreçleri ve yönetim şekilleri açısından önemli farklılıklar barındırırlar. Bu yazımızda, karar vermenize yardımcı olacak 5 temel farkı inceliyoruz...</p>
-            <a href="blog-yazi-detay.html" class="btn-read-more">Devamını Oku <i class="fas fa-arrow-right"></i></a>
-        </div>
-    </article>
-    
-    <!-- Blog Yazısı Kartı 2 -->
-    <article class="blog-post-card">
-        <a href="blog-yazi-detay.html" class="post-image-link">
-            <img src="https://images.unsplash.com/photo-1516321497487-e288fb19713f?w=800" alt="Masa üzerinde çalışan insanlar">
-        </a>
-        <div class="post-content">
-            <div class="post-meta">
-                <span><i class="fas fa-calendar-alt"></i> 02 Ekim 2024</span>
-                <span><i class="fas fa-tag"></i> Mevzuat</span>
-            </div>
-            <h2 class="post-title"><a href="blog-yazi-detay.html">Dernek Yöneticilerinin Gözden Kaçırmaması Gereken Yasal Sorumluluklar</a></h2>
-            <p class="post-excerpt">Dernek yönetim kurulunda görev almak, onurlu bir görev olmasının yanı sıra ciddi yasal sorumlulukları da beraberinde getirir. Defterlerin usulüne uygun tutulmamasından, beyannamelerin zamanında verilmemesine kadar birçok konu, yöneticilerin şahsi sorumluluğuna yol açabilir. Bu yazıda, yöneticilerin bilmesi gereken kritik yasal yükümlülükleri ele alıyoruz...</p>
-            <a href="blog-yazi-detay.html" class="btn-read-more">Devamını Oku <i class="fas fa-arrow-right"></i></a>
-        </div>
-    </article>
+                    <div class="main-content">
+                        
+                        <!-- Blog Yazısı Kartı 1 - Boyutlar ve Lazy Load eklendi -->
+                        <article class="blog-post-card">
+                            <a href="blog-yazi-detay.html" class="post-image-link">
+                                <img src="https://images.unsplash.com/photo-1556761175-5973dc0f32e7?w=800" alt="İki iş insanı el sıkışıyor" width="800" height="450" loading="lazy">
+                            </a>
+                            <div class="post-content">
+                                <div class="post-meta">
+                                    <span><i class="fas fa-calendar-alt"></i> 15 Ekim 2025</span>
+                                    <span><i class="fas fa-tag"></i> Rehber</span>
+                                </div>
+                                <h2 class="post-title"><a href="blog-yazi-detay.html">Dernek ve Vakıf Arasındaki 5 Temel Fark Nedir?</a></h2>
+                                <p class="post-excerpt">Bir sosyal sorumluluk projesine başlarken en sık karşılaşılan sorulardan biri, "Dernek mi kurmalıyız, yoksa vakıf mı?" sorusudur...</p>
+                                <a href="blog-yazi-detay.html" class="btn-read-more">Devamını Oku <i class="fas fa-arrow-right"></i></a>
+                            </div>
+                        </article>
+                        
+                        <!-- Blog Yazısı Kartı 2 -->
+                        <article class="blog-post-card">
+                            <a href="blog-yazi-detay.html" class="post-image-link">
+                                <img src="https://images.unsplash.com/photo-1516321497487-e288fb19713f?w=800" alt="Masa üzerinde çalışan insanlar" width="800" height="450" loading="lazy">
+                            </a>
+                            <div class="post-content">
+                                <div class="post-meta">
+                                    <span><i class="fas fa-calendar-alt"></i> 02 Ekim 2024</span>
+                                    <span><i class="fas fa-tag"></i> Mevzuat</span>
+                                </div>
+                                <h2 class="post-title"><a href="blog-yazi-detay.html">Dernek Yöneticilerinin Gözden Kaçırmaması Gereken Yasal Sorumluluklar</a></h2>
+                                <p class="post-excerpt">Dernek yönetim kurulunda görev almak, onurlu bir görev olmasının yanı sıra ciddi yasal sorumlulukları da beraberinde getirir...</p>
+                                <a href="blog-yazi-detay.html" class="btn-read-more">Devamını Oku <i class="fas fa-arrow-right"></i></a>
+                            </div>
+                        </article>
 
-    <!-- Blog Yazısı Kartı 3 -->
-    <article class="blog-post-card">
-        <a href="blog-yazi-detay.html" class="post-image-link">
-            <img src="https://images.unsplash.com/photo-1543286386-713bdd548da4?w=800" alt="Finansal grafikler ve kalem">
-        </a>
-        <div class="post-content">
-            <div class="post-meta">
-                <span><i class="fas fa-calendar-alt"></i> 25 Eylül 2024</span>
-                <span><i class="fas fa-tag"></i> Finans</span>
-            </div>
-            <h2 class="post-title"><a href="blog-yazi-detay.html">STK'lar İçin İktisadi İşletme Kurmanın Avantajları Nelerdir?</a></h2>
-            <p class="post-excerpt">Derneğinizin veya vakfınızın temel amaçlarını gerçekleştirmek için sürekli bağış toplamak yerine, kendi gelirinizi üretebileceğiniz bir model düşündünüz mü? İktisadi işletmeler, STK'ların mali bağımsızlıklarını kazanmaları için güçlü bir araçtır. Bu modelin avantajlarını ve dikkat edilmesi gerekenleri inceliyoruz...</p>
-            <a href="blog-yazi-detay.html" class="btn-read-more">Devamını Oku <i class="fas fa-arrow-right"></i></a>
-        </div>
-    </article>
+                        <!-- Blog Yazısı Kartı 3 -->
+                        <article class="blog-post-card">
+                            <a href="blog-yazi-detay.html" class="post-image-link">
+                                <img src="https://images.unsplash.com/photo-1543286386-713bdd548da4?w=800" alt="Finansal grafikler ve kalem" width="800" height="450" loading="lazy">
+                            </a>
+                            <div class="post-content">
+                                <div class="post-meta">
+                                    <span><i class="fas fa-calendar-alt"></i> 25 Eylül 2024</span>
+                                    <span><i class="fas fa-tag"></i> Finans</span>
+                                </div>
+                                <h2 class="post-title"><a href="blog-yazi-detay.html">STK'lar İçin İktisadi İşletme Kurmanın Avantajları Nelerdir?</a></h2>
+                                <p class="post-excerpt">Derneğinizin veya vakfınızın temel amaçlarını gerçekleştirmek için sürdürülebilir bir gelir modeli oluşturmanın yolları...</p>
+                                <a href="blog-yazi-detay.html" class="btn-read-more">Devamını Oku <i class="fas fa-arrow-right"></i></a>
+                            </div>
+                        </article>
 
-</div>
+                    </div>
+
                     <!-- YAN MENÜ (SIDEBAR) -->
-<aside class="sidebar">
-    <div class="widget">
-        <h4>Bilgi Bankası</h4>
-        <ul>
-            <li><a href="blog.html" class="current">Blog & Makaleler</a></li>
-            <li><a href="mevzuat.html">Önemli Mevzuatlar</a></li>
-        </ul>
-    </div>
-    <div class="widget">
-        <h4>Mevzuat Karmaşık Mı Geldi?</h4>
-        <p>Yasal süreçlerde hata yapmamak ve güncel bilgilere ulaşmak için uzman ekibimizden destek alın.</p>
-        <a href="iletisim.html" class="btn btn-secondary" style="width: 100%;">Danışmanlık Al</a>
-    </div>
-</aside>
+                    <aside class="sidebar">
+                        <div class="widget">
+                            <h4>Bilgi Bankası</h4>
+                            <ul>
+                                <li><a href="blog.html" class="current">Blog & Makaleler</a></li>
+                                <li><a href="mevzuat.html">Önemli Mevzuatlar</a></li>
+                            </ul>
+                        </div>
+                        <div class="widget">
+                            <h4>Mevzuat Karmaşık Mı Geldi?</h4>
+                            <p>Yasal süreçlerde hata yapmamak için uzman ekibimizden destek alın.</p>
+                            <a href="iletisim.html" class="btn btn-secondary" style="width: 100%;">Danışmanlık Al</a>
+                        </div>
+                    </aside>
                 </div>
             </div>
         </section>
     </main>
-<!-- WhatsApp Floating Button -->
-<a href="https://wa.me/905347054234" class="whatsapp-float" target="_blank" rel="noopener">
-    <i class="fab fa-whatsapp"></i>
-</a>
+
+    <!-- WhatsApp Floating Button (Sabit) -->
+    <a href="https://wa.me/905347054234" class="whatsapp-float" target="_blank" rel="noopener" aria-label="WhatsApp İletişim">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
     <footer class="main-footer">
-    <div class="container">
-        <div class="footer-grid">
+        <div class="container">
+            <div class="footer-grid">
+                <!-- Logo ve Slogan -->
+                <div class="footer-col">
+                    <img src="logo.webp" alt="SH Danışmanlık Footer Logo" class="footer-logo" width="150" height="40" loading="lazy">
+                    <p>"Bize Uğrayın, Bürokrasiye Takılmayın"</p>
+                    <p>© 2025 SH Danışmanlık. Tüm Hakları Saklıdır.</p>
+                </div>
 
-            <!-- Logo ve Slogan -->
-            <div class="footer-col">
-                <img src="logo.webp" alt="SH Danışmanlık Footer Logo" class="footer-logo">
-                <p>"Bize Uğrayın, Bürokrasiye Takılmayın"</p>
-                <p>© 2025 SH Danışmanlık. Tüm Hakları Saklıdır.</p>
-            </div>
+                <!-- Hızlı Menü -->
+                <div class="footer-col">
+                    <h4>Hızlı Menü</h4>
+                    <ul>
+                        <li><a href="hakkimizda.html">Hakkımızda</a></li>
+                        <li><a href="hizmetlerimiz.html">Hizmetlerimiz</a></li>
+                        <li><a href="blog.html">Blog</a></li>
+                        <li><a href="iletisim.html">İletişim</a></li>
+                    </ul>
+                </div>
 
-            <!-- Hızlı Menü -->
-            <div class="footer-col">
-                <h4>Hızlı Menü</h4>
-                <ul>
-                    <li><a href="hakkimizda.html">Hakkımızda</a></li>
-                    <li><a href="hizmetlerimiz.html">Hizmetlerimiz</a></li>
-                    <li><a href="blog.html">Blog</a></li>
-                    <li><a href="iletisim.html">İletişim</a></li>
-                </ul>
-            </div>
+                <!-- İletişim Bilgileri -->
+                <div class="footer-col">
+                    <h4>İletişim</h4>
+                    <p><i class="fas fa-map-marker-alt" aria-hidden="true"></i> İstanbul</p>
+                    <p><i class="fas fa-phone" aria-hidden="true"></i> +90 534 705 42 34</p>
+                    <p><i class="fas fa-envelope" aria-hidden="true"></i> info@shdanismanlik.com</p>
+                </div>
 
-            <!-- İletişim Bilgileri -->
-            <div class="footer-col">
-                <h4>İletişim</h4>
-                <p><i class="fas fa-map-marker-alt" aria-hidden="true"></i> Örnek Mah. No:1, İstanbul</p>
-                <p><i class="fas fa-phone" aria-hidden="true"></i> +90 534 705 42 34</p>
-                <p><i class="fas fa-envelope" aria-hidden="true"></i> info@shdanismanlik.com</p>
-            </div>
-
-            <!-- Sosyal Medya -->
-            <div class="footer-col">
-                <h4>Bizi Takip Edin</h4>
-                <div class="social-icons">
-                    <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in" aria-hidden="true"></i></a>
-                    <a href="#" aria-label="Twitter"><i class="fab fa-twitter" aria-hidden="true"></i></a>
-                    <a href="#" aria-label="Instagram"><i class="fab fa-instagram" aria-hidden="true"></i></a>
+                <!-- Sosyal Medya -->
+                <div class="footer-col">
+                    <h4>Bizi Takip Edin</h4>
+                    <div class="social-icons">
+                        <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                        <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                    </div>
                 </div>
             </div>
+            <div class="footer-bottom" style="margin-top: 20px; text-align: center; font-size: 13px; color: #aaa;">
+                <p>© 2025 Tasarım ve Yazılım. <a href="https://akodijital.com" target="_blank" style="color: #00aced; text-decoration: none;">AKODİJİTAL</a></p>
+            </div>
         </div>
-
-        <!-- Alt Satır - Telif & Tasarımcı -->
-        <div class="footer-bottom" style="margin-top: 20px; text-align: center; font-size: 13px; color: #aaa;">
-            <p>© 2025 Tasarım ve Yazılım. Design by <a href="https://akodijital.com" target="_blank" style="color: #00aced; text-decoration: none;">AKODİJİTAL</a></p>
-        </div>
-    </div>
-</footer>
-
+    </footer>
 
     <script src="js/script.js"></script>
+
+    <!-- GetButton.io widget - Sayfa sonuna taşındı (Performans için) -->
+    <script type="text/javascript">
+        (function () {
+            var options = {
+                whatsapp: "+905347054234",
+                call_to_action: "SH DANIŞMANLIK Nasıl Yardımcı Olabiliriz.",
+                position: "left",
+            };
+            var proto = document.location.protocol, host = "getbutton.io", url = proto + "//static." + host;
+            var s = document.createElement('script'); s.type = 'text/javascript'; s.async = true; s.src = url + '/widget-send-button/js/init.js';
+            s.onload = function () { WhWidgetSendButton.init(host, proto, options); };
+            var x = document.getElementsByTagName('script')[0]; x.parentNode.insertBefore(s, x);
+        })();
+    </script>
 </body>
 </html>
